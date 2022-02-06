@@ -1,8 +1,12 @@
 # Induk_hotel_project
 
-사용한 프레임워크 : codeigniter3, bootstrap4<br>
-사용한 언어 : php, css, jquery, javascript, ajax, SQL<br>
-사용한 DB : MariaDB<br>
+>사용한 프레임워크 : codeigniter3, bootstrap4<br>
+>사용한 언어 : php, css, jquery, javascript, ajax, SQL<br>
+>사용한 DB : MariaDB<br>
+
+>사용한 템플릿<br>
+>Client page : <a href="https://themewagon.com/themes/free-bootstrap-hotel-template-royal/">Royal – Free Bootstrap Hotel Template with Booking Form</a><br>
+>Admin page : <a href="https://startbootstrap.com/theme/sb-admin-2">SB Admin 2</a>
 
 프로젝트 분류 : 팀 프로젝트
 
