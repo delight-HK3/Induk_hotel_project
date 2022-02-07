@@ -2,8 +2,8 @@
 class Admin extends CI_Controller {
     function __construct(){
         parent::__construct();
-        $this->load->database();                     // �����ͺ��̽� ����
-        $this->load->model("clientmember_m");    // �� a_member_m ����
+        $this->load->database();                    
+        $this->load->model("clientmember_m");    
         $this->load->model("admin_m");    // 모델 admin_m 연결
         $this->load->library('session');
         $this->load->library('upload');
@@ -34,18 +34,11 @@ class Admin extends CI_Controller {
             $month = date("m");
         }
 
-
-
         $data["year"] = $year;
         $data["month"] = $month;
         $data["area_chart_data"] = $this->admin_m->getArealist($year);    // 자료읽어 data배열에 저장
         $data["area_bar_data"] = $this->admin_m->getBarlist($year);    // 자료읽어 data배열에 저장
         $data["area_pie_data"] = $this->admin_m->getPielist($year,$month);    // 자료읽어 data배열에 저장
-
-//        echo('<pre>');
-//        print_r($data['area_pie_data']);
-//        echo('</pre>');
-//        exit;
 
         if($this->session->userdata("rank")==1) {   //관리자 계급인경우 바로 admin페이지로 넘어감
             $this->load->view("admin_header");
@@ -53,7 +46,7 @@ class Admin extends CI_Controller {
             $this->load->view("admin_index",$data);
             $this->load->view("admin_footer");
         } else if($this->session->userdata("rank")==2){     //손님의 경우, 다시 홈페이지로 리다이렉트 시켜줌
-            redirect("/~team1/main");
+            redirect("/main");
         } else{     //세션정보가 없다면 로그인 페이지로 넘어감.
             $this->load->view("admin_login");
         }
@@ -83,13 +76,13 @@ class Admin extends CI_Controller {
             );
             $this->session->set_userdata($data);
         }
-        redirect("/~team1/admin");
+        redirect("/admin");
     }
 
     public function clientlogout(){
         $data = array('uid','rank');
         $this->session->unset_userdata($data);
-        redirect("/~team1/admin");
+        redirect("/admin");
     }
 
     public function cUserlist(){
@@ -101,7 +94,7 @@ class Admin extends CI_Controller {
             $this->load->view("admin_User_list", $data);
             $this->load->view("admin_footer");
         } else if($this->session->userdata("rank")==2){     //손님의 경우
-            redirect("/~team1/main");
+            redirect("/main");
         } else{     //세션정보가 없다면 로그인 페이지로 넘어감.
             $this->load->view("admin_login");
         }
@@ -155,7 +148,7 @@ class Admin extends CI_Controller {
             'juso'		 => $juso
         );
         $this->admin_m->updaterow($data,$no);
-        redirect("/~team1/admin/cUserlist");//cUserlist 이동.
+        redirect("/admin/cUserlist");//cUserlist 이동.
     }
 
     public function del()
@@ -163,7 +156,7 @@ class Admin extends CI_Controller {
         $no = $_GET['no'];
 
         $this->admin_m->deleterow($no);
-        redirect("/~team1/admin/cUserlist");//cUserlist 이동.
+        redirect("/admin/cUserlist");//cUserlist 이동.
     }
 
     public function cAdd()
@@ -181,9 +174,9 @@ class Admin extends CI_Controller {
         $tel2 = $this->input->post("aphone2",true);
         $tel3 = $this->input->post("aphone3",true);
         $tel = sprintf("%-3s%-4s%-4s", $tel1, $tel2, $tel3);
-        $juso1 = $this->input->post("ainjuso",true); //�ּ�
-        $juso2 = $this->input->post("ainmojuso",true); //�����ּ�
-        $juso3 = $this->input->post("aindejuso",true); //���ּ�
+        $juso1 = $this->input->post("ainjuso",true); 
+        $juso2 = $this->input->post("ainmojuso",true); 
+        $juso3 = $this->input->post("aindejuso",true); 
         $juso = $juso1."!".$juso2."!".$juso3;
         $data = array(
             'uid'		 =>	$this->input->post("auid",true),
@@ -197,7 +190,7 @@ class Admin extends CI_Controller {
             'juso'		 => $juso
         );
         $this->clientmember_m->insert($data);
-        redirect("/~team1/admin/cUserlist");//cUserlist 이동.
+        redirect("/admin/cUserlist");//cUserlist 이동.
 
     }
 }
