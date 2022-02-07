@@ -2,7 +2,7 @@
 class Adminrestaurant extends CI_Controller {
     function __construct(){
         parent::__construct();
-        $this->load->database();                     // �����ͺ��̽� ����
+        $this->load->database();                     
         $this->load->model("admin_m");    // 모델 admin_m 연결
         $this->load->library('session');
         $this->load->library('upload');
