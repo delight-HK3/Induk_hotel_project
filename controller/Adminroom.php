@@ -2,7 +2,7 @@
 class Adminroom extends CI_Controller {
     function __construct(){
         parent::__construct();
-        $this->load->database();                     // �����ͺ��̽� ����
+        $this->load->database();                     
         $this->load->model("admin_m");    // 모델 admin_m 연결
         $this->load->library('session');
         $this->load->library('upload');
@@ -21,7 +21,7 @@ class Adminroom extends CI_Controller {
             $this->load->view("admin_Room_list",$data);
             $this->load->view("admin_footer");
         } else if($this->session->userdata("rank")==2){     //손님의 경우, 다시 홈페이지로 리다이렉트 시켜줌
-            redirect("/~team1/main");
+            redirect("/main");
         } else{     //세션정보가 없다면 로그인 페이지로 넘어감.
             $this->load->view("admin_login");
         }
@@ -30,7 +30,7 @@ class Adminroom extends CI_Controller {
     public function clientlogout(){
         $data = array('uid','rank');
         $this->session->unset_userdata($data);
-        redirect("/~team1/admin");
+        redirect("/admin");
     }
 
     public function view()
@@ -75,7 +75,7 @@ class Adminroom extends CI_Controller {
         }
 
         $this->admin_m->updateRoomrow($data,$no);
-        redirect("/~team1/adminroom");
+        redirect("/adminroom");
     }
 
     public function del()
@@ -83,7 +83,7 @@ class Adminroom extends CI_Controller {
         $no = $_GET['no'];
 
         $this->admin_m->deleteRoomrow($no);
-        redirect("/~team1/adminroom");
+        redirect("/adminroom");
     }
 
     public function cAdd()
@@ -115,7 +115,7 @@ class Adminroom extends CI_Controller {
         }
 
         $this->admin_m->insertRoom($data);
-        redirect("/~team1/adminroom");
+        redirect("/adminroom");
 
     }
 
