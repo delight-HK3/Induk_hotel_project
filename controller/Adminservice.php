@@ -2,7 +2,7 @@
 class Adminservice extends CI_Controller {
     function __construct(){
         parent::__construct();
-        $this->load->database();                     // �����ͺ��̽� ����
+        $this->load->database();                     
         $this->load->model("admin_m");    // 모델 admin_m 연결
         $this->load->library('session');
         $this->load->library('upload');
@@ -20,7 +20,7 @@ class Adminservice extends CI_Controller {
             $this->load->view("admin_service_list",$data);
             $this->load->view("admin_footer");
         } else if($this->session->userdata("rank")==2){     //손님의 경우, 다시 홈페이지로 리다이렉트 시켜줌
-            redirect("/~team1/main");
+            redirect("/main");
         } else{     //세션정보가 없다면 로그인 페이지로 넘어감.
             $this->load->view("admin_login");
         }
@@ -29,7 +29,7 @@ class Adminservice extends CI_Controller {
     public function clientlogout(){
         $data = array('uid','rank');
         $this->session->unset_userdata($data);
-        redirect("/~team1/admin");
+        redirect("/admin");
     }
 
     public function view()
@@ -73,7 +73,7 @@ class Adminservice extends CI_Controller {
         }
 
         $this->admin_m->updateservicerow($data,$no);
-        redirect("/~team1/adminservice");
+        redirect("/adminservice");
     }
 
     public function del()
@@ -81,7 +81,7 @@ class Adminservice extends CI_Controller {
         $no = $_GET['no'];
 
         $this->admin_m->deleteservicerow($no);
-        redirect("/~team1/adminservice");
+        redirect("/adminservice");
     }
 
     public function cAdd()
@@ -113,7 +113,7 @@ class Adminservice extends CI_Controller {
         }
 
         $this->admin_m->insertservice($data);
-        redirect("/~team1/adminservice");
+        redirect("/adminservice");
 
     }
 
