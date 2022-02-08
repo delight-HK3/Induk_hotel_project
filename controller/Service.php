@@ -1,16 +1,14 @@
 <?
 class Service extends CI_Controller {
-    function __construct(){
-        parent::__construct();
-        $this->load->database();                     
-        $this->load->model("Service_m");    // 모델 admin_m 연결
+	function __construct(){
+        	parent::__construct();
+        	$this->load->database();                     
+       	 	$this->load->model("Service_m");    
 		$this->load->model("Clientmember_m");
 		$this->load->helper(array("url", "date"));   
-    }
-
-    public function index()
-    {
-        $data['service'] = $this->Service_m->getservice();
+    	}
+    	public function index(){
+        	$data['service'] = $this->Service_m->getservice();
 
 		$headerdata['list1'] = $this->Clientmember_m->getroom(); //header에 표시할 room 데이터
 		$headerdata['list2'] = $this->Clientmember_m->getrestaurant(); //header에 표시할 레스토랑 데이터
@@ -19,10 +17,8 @@ class Service extends CI_Controller {
 		$this->load->view("main_header",$headerdata);// view폴더의 main_header.php 
 		$this->load->view("service_list",$data);
 		$this->load->view("main_footer");// main_footer.php 호출	
-    }
-
-	public function detail()
-    {
+	}
+	public function detail(){
 		$uri_array=$this->uri->uri_to_assoc(3);
 		$no	= array_key_exists("no",$uri_array) ? $uri_array["no"] : "" ;
 		$data['service'] = $this->Service_m->getrow($no);
@@ -39,7 +35,7 @@ class Service extends CI_Controller {
 	}
 	public function reple(){
 		$uri_array=$this->uri->uri_to_assoc(3);
-		$no	= array_key_exists("no",$uri_array) ? $uri_array["no"] : "" ;
+		$no = array_key_exists("no",$uri_array) ? $uri_array["no"] : "" ;
 
 		$data = array(
 			'reple_id' => $this->session->userdata("uid"),
@@ -48,17 +44,17 @@ class Service extends CI_Controller {
 			'reple_date' => date("Y-m-d"),
 			'service_no' => $no
 		);
-
+		
 		$this->Service_m->insertreple($data);
-		redirect("/~team1/service/detail/no/$no#reple");
+		redirect("/service/detail/no/$no#reple");
 	}
 	public function reple_delete(){
 		$uri_array=$this->uri->uri_to_assoc(3);
-		$no	= array_key_exists("no",$uri_array) ? $uri_array["no"] : "" ;
+		$no = array_key_exists("no",$uri_array) ? $uri_array["no"] : "" ;
 		$service_no = array_key_exists("service_no",$uri_array) ? $uri_array["service_no"] : "" ;
 
 		$this->Service_m->deletereple($no);
-		redirect("/~team1/service/detail/no/$service_no#reple");
+		redirect("/service/detail/no/$service_no#reple");
 	}
 }
 ?>
