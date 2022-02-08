@@ -1,43 +1,42 @@
 <?
-class Main extends CI_Controller {               // Å¬·¡½ºÀÌ¸§ Ã¹ ±ÛÀÚ´Â ´ë¹®ÀÚ
+class Main extends CI_Controller {               
 	function __construct(){
-        parent::__construct();
-        $this->load->database();                     // µ¥ÀÌÅÍº£ÀÌ½º ¿¬°á
-        $this->load->model("clientmember_m");    // ¸ðµ¨ a_member_m ¿¬°á
+		parent::__construct();
+		$this->load->database();                     
+		$this->load->model("clientmember_m");    
 		$this->load->helper(array("url", "date"));   
-    }
-    public function index()                              // Á¦ÀÏ ¸ÕÀú ½ÇÇàµÇ´Â ÇÔ¼ö
-    {
+   	}
+    	public function index() {
 		$data["list1"]=$this->clientmember_m->getroom();
 		$data["list2"]=$this->clientmember_m->getrestaurant();
 		$data["list3"]=$this->clientmember_m->getservice();
 
-        $this->load->view("main_header",$data);   // viewÆú´õÀÇ main_header.php ¿Í
+		$this->load->view("main_header",$data);   // viewí´ë”ì˜ main_header.php ì™€
 		$this->load->view("main_view");
-        $this->load->view("main_footer");     // main_footer.php È£Ãâ
-    }
+		$this->load->view("main_footer");     // main_footer.php í˜¸ì¶œ
+    	}
 	public function add(){
 		$tel1 = $this->input->post("phone1",true);
 		$tel2 = $this->input->post("phone2",true);
 		$tel3 = $this->input->post("phone3",true);
 		$tel = sprintf("%-3s%-4s%-4s", $tel1, $tel2, $tel3);
-		$juso1 = $this->input->post("injuso",true); //ÁÖ¼Ò
-		$juso2 = $this->input->post("inmojuso",true); //Âü°íÁÖ¼Ò
-		$juso3 = $this->input->post("indejuso",true); //»ó¼¼ÁÖ¼Ò
+		$juso1 = $this->input->post("injuso",true); //ì£¼ì†Œ
+		$juso2 = $this->input->post("inmojuso",true); //ì°¸ê³ ì£¼ì†Œ
+		$juso3 = $this->input->post("indejuso",true); //ìƒì„¸ì£¼ì†Œ
 		$juso = $juso1."!".$juso2."!".$juso3;
 		$data = array(
-			'uid'		 =>	$this->input->post("inuid",true),
-			'pwd'		 => $this->input->post("inpwd",true),
-			'name'	     => $this->input->post("inname",true),
-			'email'		 => $this->input->post("inemail",true),
-			'phone'		 => $tel,
-			'birthday'   => $this->input->post("inbirthday",true),
-			'rank'	     => 2,
+			'uid' => $this->input->post("inuid",true),
+			'pwd' => $this->input->post("inpwd",true),
+			'name' => $this->input->post("inname",true),
+			'email' => $this->input->post("inemail",true),
+			'phone'	=> $tel,
+			'birthday' => $this->input->post("inbirthday",true),
+			'rank' => 2,
 			'zip_number' => $this->input->post("inzip",true),
-			'juso'		 => $juso
+			'juso' => $juso
 		);
 		$this->clientmember_m->insert($data);
-		redirect("/~team1/main/main_join");
+		redirect("/main/main_join");
 	}
 	public function clientlogin(){
 		$uid=$this->input->post("uid",TRUE);
@@ -61,9 +60,8 @@ class Main extends CI_Controller {               // Å¬·¡½ºÀÌ¸§ Ã¹ ±ÛÀÚ´Â ´ë¹®ÀÚ
 	public function clientlogout(){
 		$data = array('no','uid','name','rank');
 		$this->session->unset_userdata($data);
-		redirect("/~team1/main");
+		redirect("/main");
 	}
-	
 	public function check_id(){
 		$uid=$this->input->post("uid",TRUE);
 		$result = $this->clientmember_m->searchid($uid);
@@ -71,9 +69,9 @@ class Main extends CI_Controller {               // Å¬·¡½ºÀÌ¸§ Ã¹ ±ÛÀÚ´Â ´ë¹®ÀÚ
 		echo json_encode($returnArray);
 	}
 	public function main_join(){
-		$this->load->view("main_header");   // viewÆú´õÀÇ main_header.php ¿Í
+		$this->load->view("main_header");   // viewí´ë”ì˜ main_header.php ì™€
 		$this->load->view("main_join");
-        $this->load->view("main_footer");     // main_footer.php È£Ãâ
+        	$this->load->view("main_footer");     // main_footer.php í˜¸ì¶œ
 	}
 }
 ?>
