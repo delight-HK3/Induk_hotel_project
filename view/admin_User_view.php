@@ -22,7 +22,7 @@
                         $phone3=trim(substr($row->phone,7,4));
                         $juso = explode("!", $row->juso);
                         $rank=$row->rank==1 ? "관리자" : "유저" ;      // 1->관리자, 2->유저
-                        ?>
+                    ?>
                     <div class="alert" style="padding-left:50px; padding-right:50px">
                         <br>
 						<div class="form-group row">
