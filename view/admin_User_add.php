@@ -1,6 +1,5 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
-
     <!-- DataTales Example -->
     <div class="card shadow border-left-warning mb-4">
         <div class="card-header py-3">
@@ -11,7 +10,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <div class="alert" style="padding-left:50px; padding-right:50px">
                         <br>
-                        <form id="UserAdd" method="post" action="/~team1/admin/add">
+                        <form id="UserAdd" method="post" action="/admin/add">
                             <div class="form-group row">
                                 <div class="col-lg-6" style="padding-top:20px">
                                     <label style="font-size: 18px; margin:0; font-family: 'Noto Sans KR', sans-serif;">&nbsp아이디</label>
@@ -95,7 +94,7 @@
 
 </div>
 <!-- End of Main Content -->
-<script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
+<script src="/my/js/jquery-3.5.1.min.js"></script>
 <script>
 	function check_id() {
 		var uid = $("#uid").val();
@@ -103,7 +102,7 @@
 		let success = "&nbsp&nbsp&nbsp<font style='color:rgb(0, 201, 0)'>사용가능한 아이디입니다.</font>";
 		let error = "&nbsp&nbsp&nbsp<font style='color:red'>아이디가 중복됩니다.</font>"; 
 		$.ajax({
-			url: "/~team1/main/check_id",
+			url: "/main/check_id",
 			type: "POST",
 			data:{
 				"uid":uid
