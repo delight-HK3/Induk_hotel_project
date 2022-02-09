@@ -6,7 +6,7 @@
     <div class="card shadow border-left-warning mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-dark">Room 목록
-                <a href="/~team1/adminroom/cAdd" class="btn btn-warning btn-icon-split" style="float: right;">
+                <a href="/adminroom/cAdd" class="btn btn-warning btn-icon-split" style="float: right;">
                     <span class="icon text-white-50">
                         <i class="fas fa-flag"></i>
                     </span>
@@ -25,21 +25,20 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?
-                    foreach ($list as $row)                             // 연관배열 list를 row를 통해 출력한다.
-                    {
-                        $no=$row->no;
-                        $name=$row->name;
-                        $price=$row->price;
-                        ?>
-                        <tr>
-
-                            <td><?=$row->room_gubun_name; ?></a></td>
-                            <td><a href="/~team1/adminroom/view/?no=<?=$no?>"><?=$name; ?></a></td>
-                            <td><?=number_format($price); ?> KRW</a></td>
-                        </tr>
-                        <?
-                    }
+                    <?php
+                        foreach ($list as $row)// 연관배열 list를 row를 통해 출력한다.
+                        {
+                            $no=$row->no;
+                            $name=$row->name;
+                            $price=$row->price;
+                    ?>
+                            <tr>
+                                <td><?php echo $row->room_gubun_name; ?></a></td>
+                                <td><a href="/adminroom/view/?no=<?php echo $no?>"><?php echo $name; ?></a></td>
+                                <td><?php echo number_format($price); ?> KRW</a></td>
+                            </tr>
+                    <?php
+                        }
                     ?>
                     </tbody>
                 </table>
