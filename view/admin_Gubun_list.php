@@ -1,12 +1,11 @@
-
 <!-- Begin Page Content -->
 <div class="container-fluid">
-
+    
     <!-- DataTales Example -->
     <div class="card shadow border-left-warning mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-dark">Room Gubun list
-                <a href="/~team1/adminroomgubun/cAdd" class="btn btn-warning btn-icon-split" style="float: right;">
+                <a href="/adminroomgubun/cAdd" class="btn btn-warning btn-icon-split" style="float: right;">
                     <span class="icon text-white-50">
                         <i class="fas fa-flag"></i>
                     </span>
@@ -24,20 +23,19 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <?
-                    foreach ($list as $row)                             // 연관배열 list를 row를 통해 출력한다.
-                    {
-                        $no=$row->no;
-                        $name=$row->name;
+                        <?php
+                            foreach ($list as $row)// 연관배열 list를 row를 통해 출력한다.
+                            {
+                                $no=$row->no;
+                                $name=$row->name;
                         ?>
-                        <tr>
-
-                            <td><a><?=$no; ?></a></td>
-                            <td><a href="/~team1/adminroomgubun/view/?no=<?=$no?>"><?=$name; ?></a></td>
-                        </tr>
+                                <tr>
+                                    <td><a><?php echo $no; ?></a></td>
+                                    <td><a href="/adminroomgubun/view/?no=<?=$no?>"><?php echo $name; ?></a></td>
+                                </tr>
                         <?
-                    }
-                    ?>
+                            }
+                        ?>
                     </tbody>
                 </table>
             </div>
