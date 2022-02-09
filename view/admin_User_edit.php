@@ -9,23 +9,23 @@
         <div class="card-body">
             <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                        <?
-                        $no=$row->no;
-                        $name=$row->name;
-                        $email=$row->email;
-                        $uid=$row->uid;
-                        $pwd=$row->pwd;
-                        $birth=$row->birthday;
-                        $zip=$row->zip_number;
-                        $phone1=trim(substr($row->phone,0,3));
-                        $phone2=trim(substr($row->phone,3,4));
-                        $phone3=trim(substr($row->phone,7,4));
-                        $juso = explode("!", $row->juso);
-                        $rank=$row->rank==1 ? "관리자" : "유저" ;      // 1->관리자, 2->유저
+                        <?php
+							$no=$row->no;
+							$name=$row->name;
+							$email=$row->email;
+							$uid=$row->uid;
+							$pwd=$row->pwd;
+							$birth=$row->birthday;
+							$zip=$row->zip_number;
+							$phone1=trim(substr($row->phone,0,3));
+							$phone2=trim(substr($row->phone,3,4));
+							$phone3=trim(substr($row->phone,7,4));
+							$juso = explode("!", $row->juso);
+							$rank=$row->rank==1 ? "관리자" : "유저" ;      // 1->관리자, 2->유저
                         ?>
                         <div class="alert" style="padding-left:50px; padding-right:50px">
                             <br>
-                            <form id="UserEdit" method="post" action="/~team1/admin/goedit/?no=<?=$no?>">
+                            <form id="UserEdit" method="post" action="/admin/goedit/?no=<?php echo $no?>">
                                 <div class="form-group row">
                                     <div class="col-6" style="padding-top:10px">
                                         <label style="font-size: 18px; margin:0; font-family: 'Noto Sans KR', sans-serif;">&nbsp아이디</label>
@@ -81,7 +81,7 @@
                                     <div class="col-6" style="padding-top:40px"></div>
                                     <div class="col-6" style="padding-top:40px" align="left">
 										<div class="row" style="padding-left:15px">
-											<a href="/~team1/admin/del/?no=<?=$no?>" onClick="return confirm('삭제할까요?');" class="btn btn-danger btn-icon-split">
+											<a href="/admin/del/?no=<?=$no?>" onClick="return confirm('삭제할까요?');" class="btn btn-danger btn-icon-split">
 												<span class="icon text-white-50"><i class="fas fa-trash"></i></span>
 												<span class="text">삭제하기</span>
 											</a>&nbsp&nbsp&nbsp
@@ -104,7 +104,7 @@
 
 </div>
 <!-- End of Main Content -->
-<script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
+<script src="/my/js/jquery-3.5.1.min.js"></script>
 <script>
 	function membercheck(){
 		var pwd = $("#pwd").val();
