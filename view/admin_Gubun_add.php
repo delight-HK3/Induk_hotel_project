@@ -16,7 +16,7 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <div class="alert" style="padding-left:50px; padding-right:50px">
                         <br>
-                        <form id="GubunAdd" method="post" action="/~team1/adminroomgubun/add">
+                        <form id="GubunAdd" method="post" action="/adminroomgubun/add">
                             <div class="form-group row">
                                 <div class="col-6" style="padding-top:10px">
                                     <label style="font-size: 18px; margin:0; font-family: 'Noto Sans KR', sans-serif;">&nbsp구분 이름</label>
