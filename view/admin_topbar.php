@@ -40,54 +40,43 @@
                 </li>
 
                 <div style="padding-right:240PX"></div>
-
                
                 <div class="topbar-divider d-none d-sm-block"></div>
-
                 <li class="nav-item dropdown no-arrow">
-                    <a class="nav-link " id="userDropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin:0; font-family: 'Noto Sans KR', sans-serif;">서비스 시설 수&nbsp;&nbsp;:&nbsp;&nbsp;<?=$count['sv_count']?></span>
+                    <a class="nav-link " id="userDropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin:0; font-family: 'Noto Sans KR', sans-serif;">서비스 시설 수&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $count['sv_count']?></span>
                     </a>
                 </li>
-               
 
                 <div class="topbar-divider d-none d-sm-block"></div>
                 <li class="nav-item dropdown no-arrow">
-                    <a class="nav-link " id="userDropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin:0; font-family: 'Noto Sans KR', sans-serif;">레스토랑 수&nbsp;&nbsp;:&nbsp;&nbsp;<?=$count['rt_count']?></span>
+                    <a class="nav-link " id="userDropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin:0; font-family: 'Noto Sans KR', sans-serif;">레스토랑 수&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $count['rt_count']?></span>
                     </a>
                 </li>
-                
 
                 <div class="topbar-divider d-none d-sm-block"></div>
                 <li class="nav-item dropdown no-arrow">
-                    <a class="nav-link " id="userDropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin:0; font-family: 'Noto Sans KR', sans-serif;">방 종류 수&nbsp;&nbsp;:&nbsp;&nbsp;<?=$count['rm_count']?></span>
+                    <a class="nav-link " id="userDropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin:0; font-family: 'Noto Sans KR', sans-serif;">방 종류 수&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $count['rm_count']?></span>
                     </a>
                 </li>
-                
-
+              
                 <div class="topbar-divider d-none d-sm-block"></div>
                 <li class="nav-item dropdown no-arrow">
-                    <a class="nav-link " id="userDropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                    <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin:0; font-family: 'Noto Sans KR', sans-serif;">회원 수&nbsp;&nbsp;:&nbsp;&nbsp;<?=$count['mb_count']?></span>
+                    <a class="nav-link " id="userDropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin:0; font-family: 'Noto Sans KR', sans-serif;">회원 수&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $count['mb_count']?></span>
                     </a>
                 </li>
 
-                
                 <div class="topbar-divider d-none d-sm-block"></div>
 
                 <!-- Nav Item - User Information -->
                 <li class="nav-item dropdown no-arrow">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin:0; font-family: 'Noto Sans KR', sans-serif;"><?=$this->session->userdata("name")?>&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                        <img class="img-profile rounded-circle"
-                             src="/~team1/my/img/undraw_profile.svg">
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small" style="font-size: 15px; margin:0; font-family: 'Noto Sans KR', sans-serif;"><?php echo $this->session->userdata("name")?>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <img class="img-profile rounded-circle" src="/my/img/undraw_profile.svg">
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -113,9 +102,6 @@
                         </a>
                     </div>
                 </li>
-                
-
             </ul>
-
         </nav>
         <!-- End of Topbar -->
