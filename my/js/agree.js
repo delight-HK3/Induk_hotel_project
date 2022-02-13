@@ -59,7 +59,7 @@ function check_id() {
 	let success = "&nbsp&nbsp&nbsp<font style='color:rgb(0, 201, 0)'>사용가능한 아이디입니다.</font>";
 	let error = "&nbsp&nbsp&nbsp<font style='color:red'>아이디가 중복됩니다.</font>"; 
 	$.ajax({
-		url: "/~team1/main/check_id",
+		url: "/main/check_id",
 		type: "POST",
 		data:{
 			"uid":uid
@@ -80,7 +80,7 @@ function logincheck(){
 	var uid = $("#loguid").val();
 	var pwd = $("#logpwd").val();
 	$.ajax({
-		url: "/~team1/main/clientlogin",
+		url: "/main/clientlogin",
 		type: "POST",
 		data : {
 			"uid":uid, 
