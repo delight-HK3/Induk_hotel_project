@@ -283,7 +283,7 @@ var employee_id = $(this).attr("id");
    if(employee_id != '')  
    {  
 		$.ajax({  
-			 url:"/~team1/reservation/select",  
+			 url:"/reservation/select",  
 			 method:"POST",  
 			 data:{employee_id:employee_id},  
 			 success:function(data){  
@@ -299,7 +299,7 @@ $(document).on('click', '.image_data', function(){
    if(image_id != '')  
    {  
 		$.ajax({  
-			 url:"/~team1/reservation/showimg",  
+			 url:"/reservation/showimg",  
 			 method:"POST",  
 			 data:{image_id:image_id},  
 			 success:function(data){  
