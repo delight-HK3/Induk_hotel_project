@@ -4,54 +4,58 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="/~team1/my/img/main_Logo.png" type="image/png">
+        <link rel="icon" href="/my/img/main_Logo.png" type="image/png">
         <title>INDUK Hotel</title>
+	    
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="/~team1/my/css/bootstrap.css">
-		
-        <link rel="stylesheet" href="/~team1/my/vendors/linericon/style.css">
-        <link rel="stylesheet" href="/~team1/my/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/~team1/my/vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="/~team1/my/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
-        <link rel="stylesheet" href="/~team1/my/vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="/my/css/bootstrap.css">
+        <link rel="stylesheet" href="/my/vendors/linericon/style.css">
+        <link rel="stylesheet" href="/my/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/my/vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="/my/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="/my/vendors/nice-select/css/nice-select.css">
+	    
         <!-- main css -->
-        <link rel="stylesheet" href="/~team1/my/css/style.css">
-        <link rel="stylesheet" href="/~team1/my/css/responsive.css">
-        <link rel="stylesheet" href="/~team1/my/css/jquery-ui.css"/>
+        <link rel="stylesheet" href="/my/css/style.css">
+        <link rel="stylesheet" href="/my/css/responsive.css">
+        <link rel="stylesheet" href="/my/css/jquery-ui.css"/>
+	    
         <!-- animation css -->
-        <link rel="stylesheet" href="/~team1/my/css/animate.css">
-        <link rel="stylesheet" href="/~team1/my/css/animate.compat.css">
-        <link rel="stylesheet" href="/~team1/my/css/animate.min.css">
-		<!-- font css -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
-		<!-- 달력 css-->
-		<link rel="stylesheet" href="/~team1/my/css/bootstrap-material-datetimepicker.css" />
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/my/css/animate.css">
+        <link rel="stylesheet" href="/my/css/animate.compat.css">
+        <link rel="stylesheet" href="/my/css/animate.min.css">
+	    
+	<!-- font css -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+	    
+	<!-- 달력 css-->
+	<link rel="stylesheet" href="/my/css/bootstrap-material-datetimepicker.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    
         <style>
             /*datepicker에서 사용한 이미지 버튼 style적용*/
             img.ui-datepicker-trigger {
                 margin-left:5px; vertical-align:middle; cursor:pointer;
             }
         </style>
-		<!--스크롤 CSS (aos 라이브러리) !-->
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		
+	<!--스크롤 CSS (aos 라이브러리) !-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>	
     </head>
     <body>
-		<!-- AOS 라이브러리 초기화 스크립트 !-->
-			<script> 
-				AOS.init(); 
-			</script>
+	<!-- AOS 라이브러리 초기화 스크립트 !-->
+	<script> 
+		AOS.init(); 
+	</script>
 			
         <!--================Header Area =================-->
         <header class="header_area">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="/~team1/main"><img src="/~team1/my/img/main_Logo.png" alt="">&nbsp;&nbsp;<b>INDUK HOTEL</b></a>
+                    <a class="navbar-brand logo_h" href="/main"><img src="/my/img/main_Logo.png" alt="">&nbsp;&nbsp;<b>INDUK HOTEL</b></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar" ></span>
                         <span class="icon-bar"></span>
@@ -60,66 +64,62 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset type1" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto ">
-                            <li class="nav-item"><a class="nav-link" href="/~team1/main">Home</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="/~team1/about">About us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/main">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="/about">About us</a></li>
                             <li class="nav-item submenu dropdown">
-                                <a href="/~team1/room" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Room</a>
+                                <a href="/room" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Room</a>
                                 <!--for문으로 룸의 이름 및 정보 불러오기 개별프로젝트 활용-->
                                 <ul class="dropdown-menu">
-									<?php
-										foreach($list1 as $row)
-										{
-											$no=$row->no;
-									?>
-											<li class="nav-item"><a class="nav-link" href="/~team1/room/detail/no/<?php echo($no);?>"><?php echo($row->name);?></a></li>
-									<?php
-										}
-									?>
+					<?php
+						foreach($list1 as $row){
+							$no=$row->no;
+					?>
+							<li class="nav-item"><a class="nav-link" href="/room/detail/no/<?php echo($no);?>"><?php echo($row->name);?></a></li>
+					<?php
+						}
+					?>
                                 </ul>
                             </li>
                             <li class="nav-item submenu dropdown">
-                                <a href="/~team1/restaurant" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Restaurant</a>
+                                <a href="/restaurant" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Restaurant</a>
                                 <!--for문으로 룸의 이름 및 정보 불러오기 개별프로젝트 활용-->
-                                <ul class="dropdown-menu">
-                                    <!--3star 한자 이름 : 花戀-->
-									<?php
-										foreach($list2 as $row)
-										{
-											$no=$row->no;
-									?>
-											<li class="nav-item"><a class="nav-link" href="/~team1/restaurant/detail/no/<?php echo($no);?>"><?php echo($row->name);?></a></li>
-									<?php
-										}
-									?>
+                                <ul class="dropdown-menu"> 
+					<?php
+						foreach($list2 as $row){
+							$no=$row->no;
+					?>
+							<li class="nav-item"><a class="nav-link" href="/restaurant/detail/no/<?php echo($no);?>"><?php echo($row->name);?></a></li>
+					<?php
+						}
+					?>
                                 </ul>
                             </li>
-							<?
-								if($this->session->userdata("rank")==1){
-									echo("<li class='nav-item'><a class='nav-link' href='/~team1/admin'>Admin</a></li>");
-									echo("<li class='nav-item'><a class='nav-link' href='/~team1/mypage'>My Page</a></li>");
-									echo("<li class='nav-item'><a class='nav-link' href='/~team1/main/clientlogout'>Logout</a></li>");
-								}
-								else if($this->session->userdata("rank")==2){
-									echo("<li class='nav-item'><a class='nav-link' href='/~team1/mypage'>My Page</a></li>");
-									echo("<li class='nav-item'><a class='nav-link' href='/~team1/main/clientlogout'>Logout</a></li>");
-								}
-								else{
-									echo("<li class='nav-item'><a class='nav-link' href='#signUpModal' data-toggle='modal'>Sign up</a></li>");
-									echo("<li class='nav-item'><a class='nav-link' href='#loginModal' data-toggle='modal'>Login</a></li>");
+			    <?
+				if($this->session->userdata("rank")==1){
+					echo("<li class='nav-item'><a class='nav-link' href='/admin'>Admin</a></li>");
+					echo("<li class='nav-item'><a class='nav-link' href='/mypage'>My Page</a></li>");
+					echo("<li class='nav-item'><a class='nav-link' href='/main/clientlogout'>Logout</a></li>");
+				}
+				else if($this->session->userdata("rank")==2){
+					echo("<li class='nav-item'><a class='nav-link' href='/mypage'>My Page</a></li>");
+					echo("<li class='nav-item'><a class='nav-link' href='/main/clientlogout'>Logout</a></li>");
+				}
+				else{
+					echo("<li class='nav-item'><a class='nav-link' href='#signUpModal' data-toggle='modal'>Sign up</a></li>");
+					echo("<li class='nav-item'><a class='nav-link' href='#loginModal' data-toggle='modal'>Login</a></li>");
                                 }
-							?>
+			    ?>
                             <li class="nav-item submenu dropdown">
-                                <a href="/~team1/service" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" >Service</a>
+                                <a href="/service" class="nav-link dropdown-toggle" role="button" aria-haspopup="true" >Service</a>
                                 <ul class="dropdown-menu">
                                     <?php
-										foreach($list3 as $row)
-										{
-											$no=$row->no;
-									?>
-											<li class="nav-item"><a class="nav-link" href="/~team1/service/detail/no/<?php echo($no);?>"><?php echo($row->name);?></a></li>
-									<?php
-										}
-									?>
+					foreach($list3 as $row){
+						$no=$row->no;
+				    ?>
+						<li class="nav-item"><a class="nav-link" href="/service/detail/no/<?php echo($no);?>"><?php echo($row->name);?></a></li>
+				    <?php
+					}
+				    ?>
                                 </ul>
                             </li>
                         </ul>
@@ -137,7 +137,7 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
 						aria-hidden="true" onClick="javascript:Uncheck()">&times;</span></button>
 					</div><br>
-					<center><img src="/~team1/my/img/Login_Logo.png" style="width:220px; height: 130px"></center><br>
+					<center><img src="/my/img/Login_Logo.png" style="width:220px; height: 130px"></center><br>
 					<h4 class="modal-title" style="text-align: center; margin-top:10px; margin-bottom:10px" id="exampleModelLabel">회원가입</h4>
 					<div class="modal-body bg-light" style="width:400px;">
 						<div id="accordion">
@@ -241,9 +241,9 @@
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
 						aria-hidden="true" onClick="javascript:Uncheck()">&times;</span></button>
 					</div><br>
-					<center><img src="/~team1/my/img/Login_Logo.png" style="width:220px; height: 130px"></center><br>
+					<center><img src="/my/img/Login_Logo.png" style="width:220px; height: 130px"></center><br>
 					<h4 class="modal-title" style="text-align: center; margin-top:10px; margin-bottom:10px" id="exampleModelLabel">회원가입</h4>
-					<form action="/~team1/main/add" method="post">
+					<form action="/main/add" method="post">
 						<div class="modal-body bg-light" style="width:500px;">
 							<div class="container">
 								<table>
@@ -316,7 +316,7 @@
 						aria-hidden="true" onClick="logreset()">&times;</span></button>
 					</div><br>
 					<form onsubmit="return logincheck()">
-						<center><img src="/~team1/my/img/Login_Logo.png" style="width:220px; height: 130px"></center><br>
+						<center><img src="/my/img/Login_Logo.png" style="width:220px; height: 130px"></center><br>
 						<h4 class="modal-title" style="text-align: center; margin-top:10px; margin-bottom:10px" id="exampleModelLabel">로그인</h4><br>
 							<div class="modal-body bg-light" style="width:350px;">
 								<div class="container">
