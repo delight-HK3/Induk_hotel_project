@@ -5,9 +5,9 @@
             	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 				<div class="container">
 					<div class="banner_content text-center" >
-						<img src="/~team1/my/img/Hotel_name.png" class="animated fadeInDown" style="width:580px; height:266px"><br>
+						<img src="/my/img/Hotel_name.png" class="animated fadeInDown" style="width:580px; height:266px"><br>
                         <p style="color:white;" class="animated fadeInUp">We provide services worthy of our long history and reputation.</p>
-						<a href="/~team1/about" class="btn theme_btn button_hover animated fadeInUp">Introduce Hotel</a>
+						<a href="/about" class="btn theme_btn button_hover animated fadeInUp">Introduce Hotel</a>
 					</div>
 				</div>
             </div> 
@@ -15,7 +15,7 @@
                 <div class="container">
                     <div class="hotel_booking_table justify-content-md-center">
 						<div class="boking_table">
-							<form  method="post" action="/~team1/reservation" onsubmit="return reservationcheck()" >
+							<form  method="post" action="/reservation" onsubmit="return reservationcheck()" >
 								<div class="row">
 									<div class="col-lg-3" style="margin-top: 10px; margin-bottom: 10px;">
 										<h2 style="padding-top:20px; padding-bottom:20px">reservation Your Room</h2>
@@ -99,15 +99,15 @@
 
 									<div class="carousel-inner">
 										<div class="carousel-item active">
-											<img src="/~team1/my/img/indukroom/deluxe_room1.jpg" class="d-block w-100" >
+											<img src="/my/img/indukroom/deluxe_room1.jpg" class="d-block w-100" >
 										</div>
 
 										<div class="carousel-item">
-											<img src="/~team1/my/img/indukroom/deluxe_room2.jpg" class="d-block w-100" >
+											<img src="/my/img/indukroom/deluxe_room2.jpg" class="d-block w-100" >
 										</div>
 
 										<div class="carousel-item">
-											<img src="/~team1/my/img/indukroom/deluxe_room3.jpg" class="d-block w-100">
+											<img src="/my/img/indukroom/deluxe_room3.jpg" class="d-block w-100">
 										</div>                       
 									</div>
 								
@@ -131,7 +131,7 @@
 						</font>
 						<br><br><br><br><br><br>
 						<div align="center">
-						<a href="/~team1/room/detail/no/4" class="button_hover theme_btn_two">Deluxe Suite Room 상세페이지</a></div>
+						<a href="/room/detail/no/4" class="button_hover theme_btn_two">Deluxe Suite Room 상세페이지</a></div>
 					</div>
 				</div>
 				<!--디럭스스위트룸 소개 !-->
@@ -146,7 +146,7 @@
                         </font>
                         <br><br><br><br><br><br>
                         <div align="center">
-						<a href="/~team1/room/detail/no/5" class="button_hover theme_btn_two">Korean Suite Room 상세페이지</a></div>
+						<a href="/room/detail/no/5" class="button_hover theme_btn_two">Korean Suite Room 상세페이지</a></div>
 					</div>
 					<div style="float:right; width:50%">
 						<div data-aos="zoom-in" data-aos-duration="2000" class="text-center" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"> 
@@ -162,13 +162,13 @@
 
 									<div class="carousel-inner">
 										<div class="carousel-item active">
-											<img src="/~team1/my/img/indukroom/korean_room1.jpg" class="d-block w-100" >
+											<img src="/my/img/indukroom/korean_room1.jpg" class="d-block w-100" >
 										</div>
 										<div class="carousel-item">
-											<img src="/~team1/my/img/indukroom/korean_room2.jpg" class="d-block w-100" >
+											<img src="/my/img/indukroom/korean_room2.jpg" class="d-block w-100" >
 										</div>
 										<div class="carousel-item">
-											<img src="/~team1/my/img/indukroom/korean_room3.jpg" class="d-block w-100" >
+											<img src="/my/img/indukroom/korean_room3.jpg" class="d-block w-100" >
 										</div>
 									</div>                       
 								</div>
@@ -203,15 +203,15 @@
 
 									<div class="carousel-inner">
 										<div class="carousel-item active">
-											<img src="/~team1/my/img/indukroom/royal_room1.jpg" class="d-block w-100">
+											<img src="/my/img/indukroom/royal_room1.jpg" class="d-block w-100">
 										</div>
 
 										<div class="carousel-item">
-											<img src="/~team1/my/img/indukroom/royal_room2.jpg" class="d-block w-100">
+											<img src="/my/img/indukroom/royal_room2.jpg" class="d-block w-100">
 										</div>
 
 										<div class="carousel-item">
-											<img src="/~team1/my/img/indukroom/royal_room3.jpg" class="d-block w-100">
+											<img src="/my/img/indukroom/royal_room3.jpg" class="d-block w-100">
 										</div>                       
 									</div>
 								
@@ -235,7 +235,7 @@
                         </font>
                         <br><br><br><br><br><br>
                         <div align="center">
-						<a href="/~team1/room/detail/no/6" class="button_hover theme_btn_two">Royal Suite Room 상세페이지</a></div>
+						<a href="/room/detail/no/6" class="button_hover theme_btn_two">Royal Suite Room 상세페이지</a></div>
 					</div>
 				</div>
 				<!--======= 로얄 스위트룸 끝 =======-->
@@ -256,15 +256,15 @@
 
 						<div class="carousel-inner"> 
 							<div class="carousel-item active">
-								<img src="/~team1/my/img/indukroom/premier_room1.jpg" class="d-block w-100">
+								<img src="/my/img/indukroom/premier_room1.jpg" class="d-block w-100">
 							</div>
 
 							<div class="carousel-item">
-								<img src="/~team1/my/img/indukroom/premier_room2.jpg" class="d-block w-100">
+								<img src="/my/img/indukroom/premier_room2.jpg" class="d-block w-100">
 							</div>
 
 							<div class="carousel-item">
-								<img src="/~team1/my/img/indukroom/premier_room3.jpg" class="d-block w-100">
+								<img src="/my/img/indukroom/premier_room3.jpg" class="d-block w-100">
 							</div>                       
 						</div> 
 					
@@ -286,20 +286,20 @@
 					</font>
 				</div>
                 <div align="center">
-				<a href="/~team1/room/detail/no/3" class="button_hover theme_btn_two">Primer induk room 상세페이지</a></div>       
+				<a href="/room/detail/no/3" class="button_hover theme_btn_two">Primer induk room 상세페이지</a></div>       
 			</div><br><br><br><br><br><br><br><br>
         </section>
 		 <!--================ 객실 소개  =================-->			
         <br><br><br>
         <!--================ 레스토랑 소개  =================-->
         <section class="restaurant_area section_gap" data-aos="fade-up">
-        <div class = "container">
+        	<div class = "container">
 
-            <div class="section_title text-center">
-                <h2 class="title_color">INDUK Hotel Restaurant</h2><br>
-                <font style="font-size:15px; font-family: 'Noto Sans KR', sans-serif;">인덕호텔의 레스토랑들은 지금껏 경험해보지 못했던 창의적인 요리를 선보입니다. 하계역 부근이 한눈에 들어오는 환상적인 전망을 바라보며 미쉐린 3스타 셰프 '헬로월드'가 선사하는<br> 잊지 못할 다이닝을 경험해 보시기 바랍니다.인덕호텔의 강점인 탁트인 도심의 전경을 바라보며 세계 최고 수준의 다양한 요리를 즐기실 수 있습니다.</font>
-                <hr>
-            </div>
+		    <div class="section_title text-center">
+			<h2 class="title_color">INDUK Hotel Restaurant</h2><br>
+			<font style="font-size:15px; font-family: 'Noto Sans KR', sans-serif;">인덕호텔의 레스토랑들은 지금껏 경험해보지 못했던 창의적인 요리를 선보입니다. 하계역 부근이 한눈에 들어오는 환상적인 전망을 바라보며 미쉐린 3스타 셰프 '헬로월드'가 선사하는<br> 잊지 못할 다이닝을 경험해 보시기 바랍니다.인덕호텔의 강점인 탁트인 도심의 전경을 바라보며 세계 최고 수준의 다양한 요리를 즐기실 수 있습니다.</font>
+			<hr>
+		    </div>
 
             <div data-aos="zoom-in" data-aos-duration="2000" class = "text-center"> 
             <div id="indukRestaurant" class="carousel slide carousel-fade" data-ride="carousel">
@@ -313,55 +313,54 @@
 					<li data-target="#indukRestaurant" data-slide-to="6"></li>   
                 </ol>
 
-            <div class="carousel-inner" style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;">
-                <div class="carousel-item active">
-                    <img src="/~team1/my/img/gallery/res1.jpg" class="d-block w-100" alt="1">
+            	<div class="carousel-inner" style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;">
+			<div class="carousel-item active">
+			    <img src="/my/img/gallery/res1.jpg" class="d-block w-100" alt="1">
+			<div class="carousel-caption d-none d-md-block">	
+                	</div>
+                	</div>
+
+                <div class="carousel-item">
+                    <img src="/my/img/gallery/res2.jpg" class="d-block w-100" alt="2">
                 <div class="carousel-caption d-none d-md-block">
 				
                 </div>
                 </div>
 
                 <div class="carousel-item">
-                    <img src="/~team1/my/img/gallery/res2.jpg" class="d-block w-100" alt="2">
-                <div class="carousel-caption d-none d-md-block">
-				
-                </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="/~team1/my/img/gallery/res3.jpg" class="d-block w-100" alt="3">
+                    <img src="/my/img/gallery/res3.jpg" class="d-block w-100" alt="3">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
                 </div>
 
                 <div class="carousel-item">
-                    <img src="/~team1/my/img/gallery/res4.jpg" class="d-block w-100" alt="3">
+                    <img src="/my/img/gallery/res4.jpg" class="d-block w-100" alt="3">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
                 </div>
                 
                 <div class="carousel-item">
-                    <img src="/~team1/my/img/gallery/res5.jpg" class="d-block w-100" alt="3">
+                    <img src="/my/img/gallery/res5.jpg" class="d-block w-100" alt="3">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
                 </div>                
 
                 <div class="carousel-item">
-                    <img src="/~team1/my/img/gallery/res6.jpg" class="d-block w-100" alt="3">
+                    <img src="/my/img/gallery/res6.jpg" class="d-block w-100" alt="3">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
                 </div>
 
                 <div class="carousel-item">
-                    <img src="/~team1/my/img/gallery/res7.jpg" class="d-block w-100" alt="3">
+                    <img src="/my/img/gallery/res7.jpg" class="d-block w-100" alt="3">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
-				</div>
+		</div>
 
             </div>
             <a class="carousel-control-prev" href="#indukRestaurant" role="button" data-slide="prev">
@@ -380,94 +379,76 @@
 
         <!--================ 편의시설 소개  =================-->
         <section class="restaurant_area section_gap">
-        <div class = "container">
+		<div class = "container">
+		    <div class="section_title text-center" data-aos="fade-up">
+			<h2 class="title_color">INDUK Hotel Facilities</h2><br>
+			<font style="font-size:15px; font-family: 'Noto Sans KR', sans-serif;">고객의 라이프 스타일과 1:1 맞춤 카운셀링 결과를 토대로, 각 개인에 적합한 프로그램 및 트리트먼트를 제공합니다.</font>
+			<hr>
+		    </div>
 
-            <div class="section_title text-center" data-aos="fade-up">
-                <h2 class="title_color">INDUK Hotel Facilities</h2><br>
-                <font style="font-size:15px; font-family: 'Noto Sans KR', sans-serif;">고객의 라이프 스타일과 1:1 맞춤 카운셀링 결과를 토대로, 각 개인에 적합한 프로그램 및 트리트먼트를 제공합니다.</font>
-                <hr>
-            </div>
+		    <div data-aos="zoom-in" data-aos-duration="3000" class = "text-center"> 
+		    	<div id="indukFacilities" class="carousel slide carousel-fade" data-ride="carousel">
+				<ol class="carousel-indicators">
+				    <li data-target="#indukFacilities" data-slide-to="0" class="active"></li>
+				    <li data-target="#indukFacilities" data-slide-to="1"></li>
+				    <li data-target="#indukFacilities" data-slide-to="2"></li>
+				    <li data-target="#indukFacilities" data-slide-to="3"></li>
+				    <li data-target="#indukFacilities" data-slide-to="4"></li>
+				    <li data-target="#indukFacilities" data-slide-to="5"></li>
+				    <li data-target="#indukFacilities" data-slide-to="6"></li>                  
+				</ol>
+			    <div class="carousel-inner" style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;">
+				<div class="carousel-item active">
+				    <img src="/my/img/service/gym1.png" class="d-block w-100" alt="1">
+				    <div class="carousel-caption d-none d-md-block"></div>
+				</div>
 
-            <div data-aos="zoom-in" data-aos-duration="3000" class = "text-center"> 
-            <div id="indukFacilities" class="carousel slide carousel-fade" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#indukFacilities" data-slide-to="0" class="active"></li>
-                    <li data-target="#indukFacilities" data-slide-to="1"></li>
-                    <li data-target="#indukFacilities" data-slide-to="2"></li>
-                    <li data-target="#indukFacilities" data-slide-to="3"></li>
-                    <li data-target="#indukFacilities" data-slide-to="4"></li>
-                    <li data-target="#indukFacilities" data-slide-to="5"></li>
-                    <li data-target="#indukFacilities" data-slide-to="6"></li>                  
-                </ol>
+				<div class="carousel-item">
+				    <img src="/my/img/service/gym3.jpg" class="d-block w-100" alt="2">
+				    <div class="carousel-caption d-none d-md-block"></div>
+				</div>
 
-            <div class="carousel-inner" style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;">
-                <div class="carousel-item active">
-                    <img src="/~team1/my/img/service/gym1.png" class="d-block w-100" alt="1">
-                <div class="carousel-caption d-none d-md-block">
+				<div class="carousel-item">
+				    <img src="/my/img/service/gym5.jpg" class="d-block w-100" alt="3">
+				    <div class="carousel-caption d-none d-md-block"></div>
+				</div>
 
-                </div>
-                </div>
+				<div class="carousel-item">
+				    <img src="/my/img/service/pool1.jpg" class="d-block w-100" alt="3">
+				    <div class="carousel-caption d-none d-md-block"></div>
+				</div>
 
-                <div class="carousel-item">
-                    <img src="/~team1/my/img/service/gym3.jpg" class="d-block w-100" alt="2">
-                <div class="carousel-caption d-none d-md-block">
+				<div class="carousel-item">
+				    <img src="/my/img/service/spa1.jpg" class="d-block w-100" alt="3">
+				    <div class="carousel-caption d-none d-md-block"></div>
+				</div>
 
-                </div>
-                </div>
+				<div class="carousel-item">
+				    <img src="/my/img/service/spa2.jpg" class="d-block w-100" alt="3">
+				    <div class="carousel-caption d-none d-md-block"></div>
+				</div>
 
-                <div class="carousel-item">
-                    <img src="/~team1/my/img/service/gym5.jpg" class="d-block w-100" alt="3">
-                <div class="carousel-caption d-none d-md-block">
-
-                </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="/~team1/my/img/service/pool1.jpg" class="d-block w-100" alt="3">
-                <div class="carousel-caption d-none d-md-block">
-
-                </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="/~team1/my/img/service/spa1.jpg" class="d-block w-100" alt="3">
-                <div class="carousel-caption d-none d-md-block">
-
-                </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="/~team1/my/img/service/spa2.jpg" class="d-block w-100" alt="3">
-                <div class="carousel-caption d-none d-md-block">
-
-                </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="/~team1/my/img/service/lounge3.jpg" class="d-block w-100" alt="3">
-                <div class="carousel-caption d-none d-md-block">
-
-                </div>
-                </div>                                
-            </div>
-            <a class="carousel-control-prev" href="#indukFacilities" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#indukFacilities" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            </div><!--스크롤효과 닫는태그!-->
-
-        </div>        
+				<div class="carousel-item">
+				    <img src="/my/img/service/lounge3.jpg" class="d-block w-100" alt="3">
+				    <div class="carousel-caption d-none d-md-block"></div>
+				</div>                                
+			    </div>
+			    <a class="carousel-control-prev" href="#indukFacilities" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			    </a>
+			    <a class="carousel-control-next" href="#indukFacilities" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			    </a>
+		    </div><!--스크롤효과 닫는태그!-->
+		</div>        
         </section>
         <!--================ 편의시설 소개  =================-->
 
-
         <!--================ 인덕그룹 소개 =================-->
         <section class="about_history_area section_gap">
-        <div data-aos="fade-right">
+            <div data-aos="fade-right">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 d_flex align-items-center">
@@ -475,15 +456,15 @@
                                 <h2 class="title title_color">About Us : INDUK Group</h2>
                                 <p style="font-size:15px; font-family: 'Noto Sans KR', sans-serif;">인덕대학교(仁德大學校, Induk University)는 대한민국의 전문대학으로 박인덕이 설립하였습니다. 1971년 12월, 학교법인 인덕학원이 서울특별시 노원구에 설립한 인덕예술공과전문학교가 모태입니다.<br> 
                                 "손과 머리로 無에서 有로" 라는 건학이념을 기반으로 최고의 서비스를 제공하고 있습니다. 인덕 호텔에서 평생 잊을 수 없는 추억을 남겨보세요.</p>
-                                <a href="/~team1/about/#member" class="button_hover theme_btn_two">Developers | 개발자 소개</a>
+                                <a href="/about/#member" class="button_hover theme_btn_two">Developers | 개발자 소개</a>
                             </div>
                         </div>
                         <div class="col-lg-6" ><br><br>
-                            <img class="img-fluid" style="background: rgb(255, 241, 204); width:500px; height:500px; border-radius:100px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" src="/~team1/my/img/Hotel_name_black.png" alt="img">
+                            <img class="img-fluid" style="background: rgb(255, 241, 204); width:500px; height:500px; border-radius:100px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;" src="/my/img/Hotel_name_black.png" alt="img">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-		<script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
-		<script src="/~team1/my/js/reservation.js"></script><!--예약 스크립트-->
+	<script src="/my/js/jquery-3.5.1.min.js"></script>
+	<script src="/my/js/reservation.js"></script><!--예약 스크립트-->
