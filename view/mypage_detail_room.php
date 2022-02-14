@@ -39,40 +39,39 @@
 			<br><br>
 		<!--투숙기간 계산-->
 		<!--추가옵션 계산-->
+		<?php
+			if($room->no == 1){
+		?>
+			<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">추가 옵션</font><br><br>
+			<!--성인 조식-->
+			<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">성인 조식</font>
+			<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: rgb(255, 241, 204);" name="adult_mor_num" value="<?php echo($row->adult_num);?>" id="morning1" readonly="readonly">
+			<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">X &nbsp 50,000</font>
+			<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right" id="morningpay1"> VIP 특별혜택</font><br>
+			<!--성인 조식-->
 			<?php
-				if($room->no == 1){
+				if($row->child_num != 0)
+				{
 			?>
-				<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">추가 옵션</font><br><br>
-				<!--성인 조식-->
-				<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">성인 조식</font>
-				<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: rgb(255, 241, 204);" name="adult_mor_num" value="<?php echo($row->adult_num);?>" id="morning1" readonly="readonly">
-				<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">X &nbsp 50,000</font>
-				<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right" id="morningpay1"> VIP 특별혜택</font><br>
-				<!--성인 조식-->
-					<?php
-						if($row->child_num != 0)
-						{
-					?>
-						<!--어린이 조식-->
-						<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">어린이 조식</font>
-						<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: rgb(255, 241, 204);" name="child_mor_num" value="<?php echo($row->child_num);?>" id="morning2" readonly="readonly">
-						<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">X &nbsp 40,000</font>
-						<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right" id="morningpay2"> VIP 특별혜택</font><br>
-						<!--어린이 조식-->
-					<?php
-						}
-					?>
-				<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">차량 픽업 서비스</font>
-				<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right"> VIP 특별혜택</font><br><br>
-				<div class="row">
-					<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:30px">추가사항 :</font>
-					<textarea style="margin-left:15px; font-family: 'Noto Sans KR', sans-serif; padding:10px;" cols="46" rows="3" name="bigo"><?php echo($row->bigo);?></textarea>
-				</div><br>
+					<!--어린이 조식-->
+					<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">어린이 조식</font>
+					<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: rgb(255, 241, 204);" name="child_mor_num" value="<?php echo($row->child_num);?>" id="morning2" readonly="readonly">
+					<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">X &nbsp 40,000</font>
+					<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right" id="morningpay2"> VIP 특별혜택</font><br>
+					<!--어린이 조식-->
+			<?php
+				}
+			?>
+			<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">차량 픽업 서비스</font>
+			<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right"> VIP 특별혜택</font><br><br>
+			<div class="row">
+				<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:30px">추가사항 :</font>
+				<textarea style="margin-left:15px; font-family: 'Noto Sans KR', sans-serif; padding:10px;" cols="46" rows="3" name="bigo"><?php echo($row->bigo);?></textarea>
+			</div><br>
 			<?php
 				}
 				else if($room->no != 1){
 			?>
-			
 				<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">추가 옵션</font><br><br>
 				<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">성인 조식</font>
 				<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: rgb(255, 241, 204);" name="adult_mor_num" value="<?php echo($row->adult_morning_count);?>" id="morning1" readonly="readonly">
@@ -106,25 +105,24 @@
 		
 		<!--추가옵션 계산-->
 		
-			<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">세금 및 유지비</font><br><br>
-			<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">세금</font>
+		<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">세금 및 유지비</font><br><br>
+		<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">세금</font>
 			
-			<input type="hidden" id="maintain" value="50000">
-			<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:350px; text-align:right; background: rgb(255, 241, 204);" id="tax" value="" readonly="readonly">
-			<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
+		<input type="hidden" id="maintain" value="50000">
+		<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:350px; text-align:right; background: rgb(255, 241, 204);" id="tax" value="" readonly="readonly">
+		<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
 
-			<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">유지비</font>
+		<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">유지비</font>
 
-			<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:335px; text-align:right; background: rgb(255, 241, 204);" name="maintain" id="maintain1" value="<?php echo(number_format(50000))?>" readonly="readonly">
-			<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
-			<hr style="border-top: 1px solid black">
+		<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:335px; text-align:right; background: rgb(255, 241, 204);" name="maintain" id="maintain1" value="<?php echo(number_format(50000))?>" readonly="readonly">
+		<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
+		<hr style="border-top: 1px solid black">
 		
-			<input style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; border:0; width:390px; text-align:right; background: rgb(255, 241, 204);" name="allprice" id="allprice" value="<?php echo(number_format($row->price));?>" readonly="readonly">
-			<font style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; float:right; height:38px; padding-top:7px"> KRW</font><br>
-	</div>
-					
+		<input style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; border:0; width:390px; text-align:right; background: rgb(255, 241, 204);" name="allprice" id="allprice" value="<?php echo(number_format($row->price));?>" readonly="readonly">
+		<font style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; float:right; height:38px; padding-top:7px"> KRW</font><br>
+	</div>				
 </div>
-<script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
+<script src="/my/js/jquery-3.5.1.min.js"></script>
 <script>
 	$(document).ready(function(){
 		var checkin = new Date(document.getElementById("checkinhidden").value);//체크인 날짜 
