@@ -1,27 +1,27 @@
 <section class="banner_area">
 	<div class="reservation_table d_flex align-items-center">
-        <div class="overlay bg-reserve" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+        	<div class="overlay bg-reserve" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 		<div class="container">
 			<div class="banner_content">
 				<br><br><br><br>
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="row" >
-							<img src="/~team1/my/img/now.png" style="margin-left:60px">
+							<img src="/my/img/now.png" style="margin-left:60px">
 							<div class="now" style="margin-left:10px"></div>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="row">
-							<img class="animated fadeInDown" src="/~team1/my/img/now.png">
+							<img class="animated fadeInDown" src="/my/img/now.png">
 							<div class="next" style="margin-left:10px; margin-right:10px; width:65%;"></div>
-							<img src="/~team1/my/img/next.png">
+							<img src="/my/img/next.png">
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="row">
 							<div class="next" style="margin-left:15px; margin-right:15px"></div>
-							<img src="/~team1/my/img/next.png">
+							<img src="/my/img/next.png">
 						</div>
 					</div>
 					<div class="row">
@@ -33,17 +33,17 @@
 				</div>
 			</div>
 		</div>
-    </div> 
+    	</div> 
 	<section class="accomodation_area section_gap">
         <div class="container">
-			<center><h1>Select option</h1></center>
+		<center><h1>Select option</h1></center>
 			<hr><br><br>
 			<!--선택한 방 보여주기-->
 			<div style="box-shadow: 5px 5px 29px 5px rgba(0,0,0,0.38);">
 				<div class="row" style="padding:0px; margin: 0 auto;">
 					<div class="col-lg-4" style="padding:0px">
 						<a class="image_data" id="<?php echo($room->no);?>">
-						<img class="single-gallery-image" src="/~team1/my/img/indukroom/<?php echo($room->image_room1);?>" style="height:100%; margin:0px; width:100%; padding-left:0px">
+						<img class="single-gallery-image" src="/my/img/indukroom/<?php echo($room->image_room1);?>" style="height:100%; margin:0px; width:100%; padding-left:0px">
 						</a>
 					</div>
 					<div class="col-lg-5" style="padding:15px">
@@ -271,12 +271,12 @@
 								
 									<input style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; border:0; width:400px; text-align:right; background: #F9F9F9;" name="allprice" id="allprice" value="" readonly>
 									<font style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; float:right; height:38px; padding-top:7px"> KRW</font><br>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div><br><br>
-				<input type="submit" style="font-size:15px; float:right" class="genric-btn large info circle arrow" value="결재하기" onclick="javascript: option.action='/~team1/reservation/depay'">
-				<input type="submit" style="font-size:15px; float:right; margin-right:10px" class="genric-btn large primary circle arrow" value="뒤로가기" onclick="javascript: option.action='/~team1/room/detail/no/<?php echo($room->no)?>'">
+					</div><br><br>
+					<input type="submit" style="font-size:15px; float:right" class="genric-btn large info circle arrow" value="결재하기" onclick="javascript: option.action='/reservation/depay'">
+					<input type="submit" style="font-size:15px; float:right; margin-right:10px" class="genric-btn large primary circle arrow" value="뒤로가기" onclick="javascript: option.action='/room/detail/no/<?php echo($room->no)?>'">
 				<br><br>
 			</form>
 		</div>
@@ -301,5 +301,6 @@
            </div>  
      </div>  
  </div>  
- <script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
- <script src="/~team1/my/js/reservation.js"></script><!--예약 스크립트-->
+	
+ <script src="/my/js/jquery-3.5.1.min.js"></script>
+ <script src="/my/js/reservation.js"></script><!--예약 스크립트-->
