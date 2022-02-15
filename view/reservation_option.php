@@ -1,27 +1,27 @@
 <section class="banner_area">
 	<div class="reservation_table d_flex align-items-center">
-        <div class="overlay bg-reserve" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+        	<div class="overlay bg-reserve" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 		<div class="container">
 			<div class="banner_content">
 				<br><br><br><br>
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="row" >
-							<img src="/~team1/my/img/now.png" style="margin-left:60px">
+							<img src="/my/img/now.png" style="margin-left:60px">
 							<div class="now" style="margin-left:10px"></div>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="row">
-							<img class="animated fadeInDown" src="/~team1/my/img/now.png">
+							<img class="animated fadeInDown" src="/my/img/now.png">
 							<div class="next" style="margin-left:10px; margin-right:10px; width:65%;"></div>
-							<img src="/~team1/my/img/next.png">
+							<img src="/my/img/next.png">
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="row">
 							<div class="next" style="margin-left:15px; margin-right:15px"></div>
-							<img src="/~team1/my/img/next.png">
+							<img src="/my/img/next.png">
 						</div>
 					</div>
 					<div class="row">
@@ -33,9 +33,9 @@
 				</div>
 			</div>
 		</div>
-    </div> 
+    	</div> 
 	<section class="accomodation_area section_gap">
-        <div class="container">
+        	<div class="container">
 			<center><h1>Select option</h1></center>
 			<hr><br><br>
 			<!--선택한 방 보여주기-->
@@ -43,7 +43,7 @@
 				<div class="row" style="padding:0px; margin: 0 auto;">
 					<div class="col-lg-4" style="padding:0px">
 						<a class="image_data" id="<?php echo($room->no);?>">
-						<img class="single-gallery-image" src="/~team1/my/img/indukroom/<?php echo($room->image_room1);?>" style="height:100%; margin:0px; width:100%; padding-left:0px">
+						<img class="single-gallery-image" src="/my/img/indukroom/<?php echo($room->image_room1);?>" style="height:100%; margin:0px; width:100%; padding-left:0px">
 						</a>
 					</div>
 					<div class="col-lg-5" style="padding:15px">
@@ -76,207 +76,207 @@
 			<form name="option" method="post">	
 				<div id="option_sel">
 					<div class="container">
-					<div class="row">
-						<div class="col-lg-6">
-							<div style="padding:30px; background: #F9F9F9;">
-								<input type="hidden" value="<?php echo($room->name);?>" name="selectroom">
-								<input type="hidden" value="<?php echo($adult_num);?>" name="adultnum" id="adult">
-								<input type="hidden" value="<?php echo($child_num);?>" name="childnum" id="child">
-								<?php
-									if($room->no == 1){
-								?>
-									<div class="col-lg">
-										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">객실 수 : 1 개</font><br><br>
-										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">투숙인원&nbsp : &nbsp</font>
-										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; ">성인 <?php echo($adult_num);?> 인 / 어린이 <?php echo($child_num);?> 인</font><br><br>
-										<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">조식 (성인 및 어린이)</font>
-										<font style="font-size:12px; font-family: 'Noto Sans KR', sans-serif; color:glay">투숙기간 전체 적용됩니다.</font>
-									
-										<br><br>
-										<div class="row" style="padding-left:30px; margin-top:5px; margin-bottom:5px; height:42px">
-											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;  padding-top:7px">성인 조식&nbsp : &nbsp VIP 특별혜택&nbsp&nbsp&nbsp&nbsp</font>
-											<div class="adult-qty row" style="margin-left:10px"><input type="text" name="adult_mor_num" id="morningadult" value="0" style="color:black; height:42px;" readonly></div>				
-										</div><br>
-										<?php
-											if($child_num != 0)
-											{
-										?>
-											<div class="row" style="padding-left:30px; margin-top:5px; margin-bottom:5px; height:42px">
-												<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;  padding-top:7px">어린이 조식&nbsp : &nbsp VIP 특별혜택</font>
-												<div class="child-qty row" style="margin-left:10px"><input type="text" name="child_mor_num" id="morningchild" value="0" style="color:black" readonly></div>				
-											</div><br>
-										<?php											
-											}
-										?>
-										<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">차량 픽업 서비스</font><br><br>
-										<div class="row">
-											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:30px">차량 픽업 서비스&nbsp : &nbsp VIP 특별혜택</font><br>
-											<font style="font-size:13px; font-family: 'Noto Sans KR', sans-serif; padding-left:30px; padding-top:10px">(필요 없는 경우 추가요청에 적어주시기 바랍니다.)</font>
-										</div>
-										<br><br>
-										<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">추가요청</font><br><br>
-										<textarea id="bigo" style="margin-left:15px; padding:10px" cols="50" rows="3" name="bigo"></textarea>
-										<div style="font-size:15px; font-family: 'Noto Sans KR', sans-serif; margin-left:15px;" id="bigo_cnt">(0 / 200)</div>
-									</div>
-								<?php
-									}
-								?>
-
-								<?php
-									if($room->no != 1)
-									{
-								?>
-								<!--어린이가 있는 경우-->
-									<div class="col-lg">
-										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">객실 수 : 1 개</font><br><br>
-										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">투숙인원&nbsp : &nbsp</font>
-										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; ">성인 <?php echo($adult_num);?> 인 / 어린이 <?php echo($child_num);?> 인</font><br><br>
-										<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">조식 (성인 및 어린이)</font>
-										<font style="font-size:12px; font-family: 'Noto Sans KR', sans-serif; color:glay">투숙기간 전체 적용됩니다.</font><br><br>
-
-										<div class="row" style="padding-left:30px; margin-top:5px; margin-bottom:5px; height:42px">
-											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;  padding-top:7px">성인 조식&nbsp : &nbsp <?php echo(number_format(50000));?> KRW</font>
-											&nbsp&nbsp&nbsp<div class="adult-qty row" style="margin-left:10px"><input type="text" name="adult_mor_num" id="morningadult" value="0" style="color:black" readonly></div>	
-										</div><br>
-										<?php
-											if($child_num != 0)
-											{
-										?>
-											<div class="row" style="padding-left:30px; margin-top:5px; margin-bottom:5px; height:42px">
-												<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;  padding-top:7px">어린이 조식&nbsp : &nbsp <?php echo(number_format(40000));?> KRW</font>
-												<div class="child-qty row" style="margin-left:10px"><input type="text" name="child_mor_num" id="morningchild" value="0" style="color:black" readonly></div>				
-											</div><br>
-										<?php											
-											}
-										?>
-										<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">차량 픽업 서비스</font><br><br>
-										<div class="row">
-											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:30px">차량 픽업 서비스 : <?php echo(number_format(150000))?> KRW</font>&nbsp&nbsp&nbsp  
-											<div class="primary-switch" style="margin-top:3px">
-												<input type="checkbox" onclick="checkcar()" name="carpicupbutton" id="carpicupbutton">
-												<label for="carpicupbutton"></label>
-											</div>
-											<input type="hidden" name="carcheck" id="carcheck" value="0">
-										</div>
-										<br><br>
-										<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">추가요청</font><br><br>
-										<textarea id="bigo" style="margin-left:15px; padding:10px" cols="50" rows="3" name="bigo"></textarea>
-										<div style="font-size:15px; font-family: 'Noto Sans KR', sans-serif; margin-left:15px;" id="bigo_cnt">(0 / 200)</div>
-									</div>
-								<!--어린이가 있는 경우-->
-								<?php
-									}
-								?>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div style="padding:30px; background: #F9F9F9;">
-								<!--투숙기간 계산-->
-									<input type="hidden" name="fromDate" id="checkinhidden" value="<?php echo($checkin)?>">
-									<input type="hidden" name="toDate" id="checkouthidden" value="<?php echo($checkout)?>">
-									<input type="hidden" id="room_id" value="<?php echo($room->no)?>">
-									<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">투숙 기간</font><br><br>
-									<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px"><?php echo($checkin)?></font>
-									<br><font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:55px">-</font>
-									<input style="text-align:right; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:60px; background: #F9F9F9;" id="inday1" readonly>
-									<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;"> 박</font>
-									<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:270px; text-align:right; background: #F9F9F9;" id="dayresult" value="<?php echo($room->price)?>" readonly>
-									<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font>
-									<br>
-									<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px"><?php echo($checkout)?></font>&nbsp&nbsp&nbsp
-									<br><br>
-								<!--투숙기간 계산-->
-								<!--추가옵션 계산-->
+						<div class="row">
+							<div class="col-lg-6">
+								<div style="padding:30px; background: #F9F9F9;">
+									<input type="hidden" value="<?php echo($room->name);?>" name="selectroom">
+									<input type="hidden" value="<?php echo($adult_num);?>" name="adultnum" id="adult">
+									<input type="hidden" value="<?php echo($child_num);?>" name="childnum" id="child">
 									<?php
 										if($room->no == 1){
 									?>
-										<input type="hidden" value="0" name="carpickup" id="carpic">
-										<input type="hidden" value="0" name="morningadult">
-										<input type="hidden" value="0" name="morningchild">
-								
-										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">추가 옵션</font><br><br>
-										<!--성인 조식-->
-										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">성인 조식</font>
-										<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" value="0" id="morning1" readonly>X
-										<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" id="inday2" readonly>
-										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">박</font>
-										<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right" id="morningpay1"> VIP 특별혜택</font><br>
-										<!--성인 조식-->
+										<div class="col-lg">
+											<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">객실 수 : 1 개</font><br><br>
+											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">투숙인원&nbsp : &nbsp</font>
+											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; ">성인 <?php echo($adult_num);?> 인 / 어린이 <?php echo($child_num);?> 인</font><br><br>
+											<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">조식 (성인 및 어린이)</font>
+											<font style="font-size:12px; font-family: 'Noto Sans KR', sans-serif; color:glay">투숙기간 전체 적용됩니다.</font>
+
+											<br><br>
+											<div class="row" style="padding-left:30px; margin-top:5px; margin-bottom:5px; height:42px">
+												<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;  padding-top:7px">성인 조식&nbsp : &nbsp VIP 특별혜택&nbsp&nbsp&nbsp&nbsp</font>
+												<div class="adult-qty row" style="margin-left:10px"><input type="text" name="adult_mor_num" id="morningadult" value="0" style="color:black; height:42px;" readonly></div>				
+											</div><br>
 											<?php
 												if($child_num != 0)
 												{
 											?>
-												<!--어린이 조식-->
+												<div class="row" style="padding-left:30px; margin-top:5px; margin-bottom:5px; height:42px">
+													<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;  padding-top:7px">어린이 조식&nbsp : &nbsp VIP 특별혜택</font>
+													<div class="child-qty row" style="margin-left:10px"><input type="text" name="child_mor_num" id="morningchild" value="0" style="color:black" readonly></div>				
+												</div><br>
+											<?php											
+												}
+											?>
+											<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">차량 픽업 서비스</font><br><br>
+											<div class="row">
+												<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:30px">차량 픽업 서비스&nbsp : &nbsp VIP 특별혜택</font><br>
+												<font style="font-size:13px; font-family: 'Noto Sans KR', sans-serif; padding-left:30px; padding-top:10px">(필요 없는 경우 추가요청에 적어주시기 바랍니다.)</font>
+											</div>
+											<br><br>
+											<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">추가요청</font><br><br>
+											<textarea id="bigo" style="margin-left:15px; padding:10px" cols="50" rows="3" name="bigo"></textarea>
+											<div style="font-size:15px; font-family: 'Noto Sans KR', sans-serif; margin-left:15px;" id="bigo_cnt">(0 / 200)</div>
+										</div>
+									<?php
+										}
+									?>
+
+									<?php
+										if($room->no != 1)
+										{
+									?>
+									<!--어린이가 있는 경우-->
+										<div class="col-lg">
+											<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">객실 수 : 1 개</font><br><br>
+											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">투숙인원&nbsp : &nbsp</font>
+											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; ">성인 <?php echo($adult_num);?> 인 / 어린이 <?php echo($child_num);?> 인</font><br><br>
+											<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">조식 (성인 및 어린이)</font>
+											<font style="font-size:12px; font-family: 'Noto Sans KR', sans-serif; color:glay">투숙기간 전체 적용됩니다.</font><br><br>
+
+											<div class="row" style="padding-left:30px; margin-top:5px; margin-bottom:5px; height:42px">
+												<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;  padding-top:7px">성인 조식&nbsp : &nbsp <?php echo(number_format(50000));?> KRW</font>
+												&nbsp&nbsp&nbsp<div class="adult-qty row" style="margin-left:10px"><input type="text" name="adult_mor_num" id="morningadult" value="0" style="color:black" readonly></div>	
+											</div><br>
+											<?php
+												if($child_num != 0)
+												{
+											?>
+												<div class="row" style="padding-left:30px; margin-top:5px; margin-bottom:5px; height:42px">
+													<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;  padding-top:7px">어린이 조식&nbsp : &nbsp <?php echo(number_format(40000));?> KRW</font>
+													<div class="child-qty row" style="margin-left:10px"><input type="text" name="child_mor_num" id="morningchild" value="0" style="color:black" readonly></div>				
+												</div><br>
+											<?php											
+												}
+											?>
+											<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">차량 픽업 서비스</font><br><br>
+											<div class="row">
+												<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:30px">차량 픽업 서비스 : <?php echo(number_format(150000))?> KRW</font>&nbsp&nbsp&nbsp  
+												<div class="primary-switch" style="margin-top:3px">
+													<input type="checkbox" onclick="checkcar()" name="carpicupbutton" id="carpicupbutton">
+													<label for="carpicupbutton"></label>
+												</div>
+												<input type="hidden" name="carcheck" id="carcheck" value="0">
+											</div>
+											<br><br>
+											<font style="font-size:18px; font-family: 'Noto Sans KR', sans-serif; color:black">추가요청</font><br><br>
+											<textarea id="bigo" style="margin-left:15px; padding:10px" cols="50" rows="3" name="bigo"></textarea>
+											<div style="font-size:15px; font-family: 'Noto Sans KR', sans-serif; margin-left:15px;" id="bigo_cnt">(0 / 200)</div>
+										</div>
+									<!--어린이가 있는 경우-->
+									<?php
+										}
+									?>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div style="padding:30px; background: #F9F9F9;">
+									<!--투숙기간 계산-->
+										<input type="hidden" name="fromDate" id="checkinhidden" value="<?php echo($checkin)?>">
+										<input type="hidden" name="toDate" id="checkouthidden" value="<?php echo($checkout)?>">
+										<input type="hidden" id="room_id" value="<?php echo($room->no)?>">
+										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">투숙 기간</font><br><br>
+										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px"><?php echo($checkin)?></font>
+										<br><font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:55px">-</font>
+										<input style="text-align:right; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:60px; background: #F9F9F9;" id="inday1" readonly>
+										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;"> 박</font>
+										<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:270px; text-align:right; background: #F9F9F9;" id="dayresult" value="<?php echo($room->price)?>" readonly>
+										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font>
+										<br>
+										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px"><?php echo($checkout)?></font>&nbsp&nbsp&nbsp
+										<br><br>
+									<!--투숙기간 계산-->
+									<!--추가옵션 계산-->
+										<?php
+											if($room->no == 1){
+										?>
+											<input type="hidden" value="0" name="carpickup" id="carpic">
+											<input type="hidden" value="0" name="morningadult">
+											<input type="hidden" value="0" name="morningchild">
+
+											<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">추가 옵션</font><br><br>
+											<!--성인 조식-->
+											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">성인 조식</font>
+											<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" value="0" id="morning1" readonly>X
+											<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" id="inday2" readonly>
+											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">박</font>
+											<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right" id="morningpay1"> VIP 특별혜택</font><br>
+											<!--성인 조식-->
+												<?php
+													if($child_num != 0)
+													{
+												?>
+													<!--어린이 조식-->
+													<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">어린이 조식</font>
+													<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" value="0" id="morning2" readonly>X
+													<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" id="inday3" readonly>
+													<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">박</font>
+													<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right" id="morningpay2"> VIP 특별혜택</font><br>
+													<!--어린이 조식-->
+												<?php
+													}
+												?>
+											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">차량 픽업 서비스</font>
+											<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right"> VIP 특별혜택</font><br><br>
+										<?php
+											}
+											else if($room->no != 1){
+										?>
+
+											<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">추가 옵션</font><br><br>
+											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">성인 조식</font>
+											<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" value="0" id="morning1" readonly>X
+											<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" id="inday2" readonly>
+											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">박</font>
+											<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:240px; text-align:right; background: #F9F9F9;" id="morningpay1" value="0" name="morningadult" readonly>
+											<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
+
+											<?php
+												if($child_num != 0)
+												{
+											?>
 												<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">어린이 조식</font>
 												<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" value="0" id="morning2" readonly>X
 												<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" id="inday3" readonly>
 												<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">박</font>
-												<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right" id="morningpay2"> VIP 특별혜택</font><br>
-												<!--어린이 조식-->
+												<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:225px; text-align:right; background: #F9F9F9;" id="morningpay2" value="0" name="morningchild" readonly>
+												<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
 											<?php
 												}
 											?>
-										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">차량 픽업 서비스</font>
-										<font style="font-size:19px; font-family: 'Noto Sans KR', sans-serif; float:right"> VIP 특별혜택</font><br><br>
-									<?php
-										}
-										else if($room->no != 1){
-									?>
-									
-										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">추가 옵션</font><br><br>
-										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">성인 조식</font>
-										<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" value="0" id="morning1" readonly>X
-										<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" id="inday2" readonly>
-										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">박</font>
-										<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:240px; text-align:right; background: #F9F9F9;" id="morningpay1" value="0" name="morningadult" readonly>
-										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
-										
-										<?php
-											if($child_num != 0)
-											{
-										?>
-											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">어린이 조식</font>
-											<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" value="0" id="morning2" readonly>X
-											<input style="text-align:center; font-size:16px; font-family: 'Noto Sans KR', sans-serif; border:0; width:30px; background: #F9F9F9;" id="inday3" readonly>
-											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif;">박</font>
-											<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:225px; text-align:right; background: #F9F9F9;" id="morningpay2" value="0" name="morningchild" readonly>
-											<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
+
+											<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">차량 픽업 서비스</font>
+											<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:287px; text-align:right; background: #F9F9F9;" id="carpic" value="0" name="carpickup" readonly>
+											<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br><br>
+
 										<?php
 											}
+
 										?>
 
-										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">차량 픽업 서비스</font>
-										<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:287px; text-align:right; background: #F9F9F9;" id="carpic" value="0" name="carpickup" readonly>
+									<!--추가옵션 계산-->
+
+										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">세금 및 유지비</font><br><br>
+										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">세금</font>
+
+										<input type="hidden" name="maintain" id="maintain" value="50000">
+										<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:364px; text-align:right; background: #F9F9F9;" id="tax" value="" readonly>
+										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
+
+										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">유지비</font>
+
+										<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:350px; text-align:right; background: #F9F9F9;" id="maintain1" value="<?php echo(number_format(50000))?>" readonly>
 										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br><br>
+										<hr style="border-top: 1px solid black">
 
-									<?php
-										}
-										
-									?>
-								
-								<!--추가옵션 계산-->
-								
-									<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">세금 및 유지비</font><br><br>
-									<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">세금</font>
-									
-									<input type="hidden" name="maintain" id="maintain" value="50000">
-									<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:364px; text-align:right; background: #F9F9F9;" id="tax" value="" readonly>
-									<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
-
-									<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">유지비</font>
-
-									<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:350px; text-align:right; background: #F9F9F9;" id="maintain1" value="<?php echo(number_format(50000))?>" readonly>
-									<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br><br>
-									<hr style="border-top: 1px solid black">
-								
-									<input style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; border:0; width:400px; text-align:right; background: #F9F9F9;" name="allprice" id="allprice" value="" readonly>
-									<font style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; float:right; height:38px; padding-top:7px"> KRW</font><br>
+										<input style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; border:0; width:400px; text-align:right; background: #F9F9F9;" name="allprice" id="allprice" value="" readonly>
+										<font style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; float:right; height:38px; padding-top:7px"> KRW</font><br>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div><br><br>
-				<input type="submit" style="font-size:15px; float:right" class="genric-btn large info circle arrow" value="결재하기" onclick="javascript: option.action='/~team1/reservation/pay'">
-				<input type="submit" style="font-size:15px; float:right; margin-right:10px" class="genric-btn large primary circle arrow" value="뒤로가기" onclick="javascript: option.action='/~team1/reservation'">
+					</div><br><br>
+					<input type="submit" style="font-size:15px; float:right" class="genric-btn large info circle arrow" value="결재하기" onclick="javascript: option.action='/reservation/pay'">
+					<input type="submit" style="font-size:15px; float:right; margin-right:10px" class="genric-btn large primary circle arrow" value="뒤로가기" onclick="javascript: option.action='/reservation'">
 				<br><br>
 			</form>
 		</div>
@@ -301,5 +301,5 @@
            </div>  
      </div>  
  </div>  
- <script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
- <script src="/~team1/my/js/reservation.js"></script><!--예약 스크립트-->
+ <script src="/my/js/jquery-3.5.1.min.js"></script>
+ <script src="/my/js/reservation.js"></script><!--예약 스크립트-->
