@@ -7,21 +7,21 @@
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="row" >
-							<img src="/~team1/my/img/now.png" style="margin-left:60px">
+							<img src="/my/img/now.png" style="margin-left:60px">
 							<div class="now" style="margin-left:10px"></div>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="row">
-							<img src="/~team1/my/img/now.png">
+							<img src="/my/img/now.png">
 							<div class="now" style="margin-left:10px; margin-right:10px; width:65%;"></div>
-							<img class="animated fadeInDown" src="/~team1/my/img/now.png">
+							<img class="animated fadeInDown" src="/my/img/now.png">
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="row">
 							<div class="next" style="margin-left:15px; margin-right:15px"></div>
-							<img src="/~team1/my/img/next.png">
+							<img src="/my/img/next.png">
 						</div>
 					</div>
 					<div class="row">
@@ -33,17 +33,16 @@
 				</div>
 			</div>
 		</div>
-    </div> 
+    	</div> 
 	<section class="accomodation_area section_gap">
         <div class="container">
-			<center><h1>Payment Room</h1></center>
+		<center><h1>Payment Room</h1></center>
 			<hr><br><br>
-			
 			<div style="box-shadow: 5px 5px 29px 5px rgba(0,0,0,0.38);">
 				<div class="row" style="padding:0px; margin: 0 auto;">
 					<div class="col-lg-4" style="padding:0px">
 						<a class="image_data" id="<?php echo($room->no);?>">
-						<img class="single-gallery-image" src="/~team1/my/img/indukroom/<?php echo($room->image_room1);?>" style="height:100%; margin:0px; width:100%; padding-left:0px">
+						<img class="single-gallery-image" src="/my/img/indukroom/<?php echo($room->image_room1);?>" style="height:100%; margin:0px; width:100%; padding-left:0px">
 						</a>
 					</div>
 					<div class="col-lg-5" style="padding:15px">
@@ -73,7 +72,7 @@
 			</div>
 			<br><br><br>
 
-			<form name="pay" action="/~team1/reservation/insertroom" method="post">	
+			<form name="pay" action="/reservation/insertroom" method="post">	
 				<div id="option_sel">
 					<div class="container">
 					<input type="hidden" value="<?php echo($adult_num);?>" name="adultnum" id="adult">
@@ -181,7 +180,6 @@
 						<div class="col-lg-6">
 							<div style="padding:30px; background: #F9F9F9;">
 								<!--투숙기간 계산-->
-									
 									<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">객실 수 : 1 개</font><br><br>
 									<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">투숙인원</font><br><br>
 									<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">성인 <?php echo($adult_num);?> 인 / 어린이 <?php echo($child_num);?> 인</font><br><br>
@@ -258,8 +256,6 @@
 										<?php
 											}
 										?>
-
-
 										<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">차량 픽업 서비스</font>
 										<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:282px; text-align:right; background: #F9F9F9;" id="carpic" value="<?php echo($carpickup);?>" name="carpickup" readonly>
 										<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br><br>
@@ -272,28 +268,27 @@
 									?>
 								
 								<!--추가옵션 계산-->
-								
-									<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">세금 및 유지비</font><br><br>
-									<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">세금</font>
+								<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; color:black">세금 및 유지비</font><br><br>
+								<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">세금</font>
 									
-									<input type="hidden" id="maintain" value="50000">
-									<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:364px; text-align:right; background: #F9F9F9;" id="tax" value="" readonly>
-									<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
+								<input type="hidden" id="maintain" value="50000">
+								<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:364px; text-align:right; background: #F9F9F9;" id="tax" value="" readonly>
+								<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br>
 
-									<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">유지비</font>
-
-									<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:350px; text-align:right; background: #F9F9F9;" name="maintain" id="maintain1" value="<?php echo(number_format(50000))?>" readonly>
-									<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br><br>
-									<hr style="border-top: 1px solid black">
+								<font style="font-size:16px; font-family: 'Noto Sans KR', sans-serif; padding-left:15px">유지비</font>
 								
-									<input style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; border:0; width:400px; text-align:right; background: #F9F9F9;" name="allprice" id="allprice" value="" readonly>
-									<font style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; float:right; height:38px; padding-top:7px"> KRW</font><br>
+								<input style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; border:0; width:350px; text-align:right; background: #F9F9F9;" name="maintain" id="maintain1" value="<?php echo(number_format(50000))?>" readonly>
+								<font style="font-size:20px; font-family: 'Noto Sans KR', sans-serif; float:right"> KRW</font><br><br>
+								<hr style="border-top: 1px solid black">
+								
+								<input style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; border:0; width:400px; text-align:right; background: #F9F9F9;" name="allprice" id="allprice" value="" readonly>
+								<font style="font-size:25px; font-family: 'Noto Sans KR', sans-serif; float:right; height:38px; padding-top:7px"> KRW</font><br>
 							</div>
 						</div>
 					</div>
 				</div><br><br>
 				<input type="submit" id="insert" style="font-size:15px; float:right; margin-right:15px" class="genric-btn large info circle arrow" value="결재하기" onclick="return checkpay()">
-				<input type="submit" style="font-size:15px; float:right; margin-right:10px" class="genric-btn large primary circle arrow" value="뒤로가기" onclick="javascript: pay.action='/~team1/reservation/deoption'">
+				<input type="submit" style="font-size:15px; float:right; margin-right:10px" class="genric-btn large primary circle arrow" value="뒤로가기" onclick="javascript: pay.action='/reservation/deoption'">
 				<br><br>
 			</form>
 		</div>
@@ -318,5 +313,5 @@
            </div>  
      </div>  
  </div>  
- <script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
- <script src="/~team1/my/js/reservation.js"></script><!--예약 스크립트-->
+ <script src="/my/js/jquery-3.5.1.min.js"></script>
+ <script src="/my/js/reservation.js"></script><!--예약 스크립트-->
