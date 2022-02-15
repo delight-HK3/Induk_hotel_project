@@ -1,14 +1,14 @@
-		<?
-			$phone1=trim(substr($row->phone,0,3));
-			$phone2=trim(substr($row->phone,3,4));
-			$phone3=trim(substr($row->phone,7,4));
-			$juso = explode("!", $row->juso);
-			$no=$row->no;
-		?>
-		<section class="banner_area">
-			<div class="overlay bg-mypage" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+        <?php
+		$phone1=trim(substr($row->phone,0,3));
+		$phone2=trim(substr($row->phone,3,4));
+		$phone3=trim(substr($row->phone,7,4));
+		$juso = explode("!", $row->juso);
+		$no=$row->no;
+	?>
+	<section class="banner_area">
+		<div class="overlay bg-mypage" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 			<br><br><br><br>
-            <div class="mypage_table align-items-center animated fadeIn"><br><br><br>
+            		<div class="mypage_table align-items-center animated fadeIn"><br><br><br>
 				<div class="container" style="height:900px">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item" style="background:rgb(73, 73, 73); border-top-left-radius: 10px; border-top-right-radius: 10px;" role="presentation">
@@ -74,7 +74,7 @@
 										</div>
 									</div>
 									<div class="col-lg-12" align="right" style="margin-top:20px">
-										<a href="/~team1/mypage/edit/no/<?php echo($no)?>" style="width:200px; margin-right:10px" class="btn btn-block btn-primary">수정하기</a>
+										<a href="/mypage/edit/no/<?php echo($no)?>" style="width:200px; margin-right:10px" class="btn btn-block btn-primary">수정하기</a>
 									</div>
 								</div><br>
 							</div>
@@ -103,7 +103,7 @@
 												{
 											?>
 													
-												<form action="/~team1/mypage/deletestateroom/no/<?php echo($row->no)?>" method="post">
+												<form action="/mypage/deletestateroom/no/<?php echo($row->no)?>" method="post">
 													<div class="table-row">
 														<input type="hidden" value="<?php echo($row->adult_num)?>" name="up1">
 														<input type="hidden" value="<?php echo($row->child_num)?>" name="up2">
@@ -129,7 +129,7 @@
 														<div class="visit" style="text-align:center; margin-top:10px"><?php echo($row->adult_num)?> 명</div>
 														<div class="visit" style="text-align:center; margin-top:10px"><?php echo($row->child_num)?> 명</div>
 														<div class="visit" style="text-align:center; margin-top:10px"><?php echo(number_format($row->price))?></div>
-														<div class="visit" style="text-align:center; margin-top:5px"><a href="/~team1/mypage/detailroom/no/<?php echo($row->no)?>/room/<?php echo($row->room_no);?>" class="button_hover theme_btn_two" onclick="window.open(this.href, '_blank', 'width=560, height=930,toolbars=no,scrollbars=no'); return false;" style="border-radius:10px">상세보기</a></div>
+														<div class="visit" style="text-align:center; margin-top:5px"><a href="/mypage/detailroom/no/<?php echo($row->no)?>/room/<?php echo($row->room_no);?>" class="button_hover theme_btn_two" onclick="window.open(this.href, '_blank', 'width=560, height=930,toolbars=no,scrollbars=no'); return false;" style="border-radius:10px">상세보기</a></div>
 														<div class="visit" style="text-align:center;">
 															<input type="submit" onclick="return confirm('정말로 취소 하시겠습니까 ?')" class="delete_button btn btn-outline-danger" value="X" style="border-radius:40px">
 														</div>
@@ -165,8 +165,7 @@
 												foreach($jangbumeal as $row)
 												{
 											?>
-													
-														<form action="/~team1/mypage/deletestatemeal/no/<?php echo($row->no)?>" method="post">
+													<form action="/mypage/deletestatemeal/no/<?php echo($row->no)?>" method="post">
 														<div class="table-row">
 															<input type="hidden" value="<?php echo($row->adult_num)?>" name="up1">
 															<input type="hidden" value="<?php echo($row->child_num)?>" name="up2">
@@ -185,13 +184,12 @@
 															<div class="visit" style="text-align:center; margin-top:10px"><?php echo($row->adult_num)?> 명</div>
 															<div class="visit" style="text-align:center; margin-top:10px"><?php echo($row->child_num)?> 명</div>
 															
-															<div class="visit" style="text-align:center; margin-top:5px"><a href="/~team1/mypage/detailmeal/no/<?php echo($row->no)?>/meal/<?php echo($row->restaurant_no);?>" class="button_hover theme_btn_two" onclick="window.open(this.href, '_blank', 'width=520, height=670,toolbars=no,scrollbars=no'); return false;" style="border-radius:10px">상세보기</a></div>
+															<div class="visit" style="text-align:center; margin-top:5px"><a href="/mypage/detailmeal/no/<?php echo($row->no)?>/meal/<?php echo($row->restaurant_no);?>" class="button_hover theme_btn_two" onclick="window.open(this.href, '_blank', 'width=520, height=670,toolbars=no,scrollbars=no'); return false;" style="border-radius:10px">상세보기</a></div>
 															<div class="visit" style="text-align:center;">
 																<input type="submit" onclick="return confirm('정말로 취소 하시겠습니까 ?')" class="delete_button btn btn-outline-danger" value="X" style="border-radius:40px">
 															</div>
-															</div>
-														</form>
-													
+														</div>
+													</form>
 											<?php
 												}
 											?>
@@ -202,6 +200,6 @@
 						</div>
 					</div>
 				</div>
-            </div><br><br><br><br><br><br>   
-        </section>
-		<script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
+		    </div><br><br><br><br><br><br>   
+		</section>
+		<script src="/my/js/jquery-3.5.1.min.js"></script>
