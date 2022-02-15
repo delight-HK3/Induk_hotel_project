@@ -7,21 +7,21 @@
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="row" >
-							<img class="animated fadeInDown" src="/~team1/my/img/now.png" style="margin-left:60px">
+							<img class="animated fadeInDown" src="/my/img/now.png" style="margin-left:60px">
 							<div class="next" style="margin-left:10px"></div>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="row">
-							<img src="/~team1/my/img/next.png">
+							<img src="/my/img/next.png">
 							<div class="next" style="margin-left:10px; margin-right:10px; width:65%;"></div>
-							<img src="/~team1/my/img/next.png">
+							<img src="/my/img/next.png">
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="row">
 							<div class="next" style="margin-left:15px; margin-right:15px"></div>
-							<img src="/~team1/my/img/next.png">
+							<img src="/my/img/next.png">
 						</div>
 					</div>
 					<div class="row">
@@ -33,9 +33,8 @@
 				</div>
 			</div>
 		</div>
-    </div> 
+    	</div> 
 	<section class="accomodation_area section_gap">
-	
 		<div class="container">  
 			<center><h1>Select Room</h1></center>
 			<hr><br><br>
@@ -48,18 +47,17 @@
 			예약 후 옵션 및 인원 조식등 변경이 가능하나 선택하신 room은 예약 후 변경이 불가능합니다.
 			</blockquote>
 		</div><br><br>
-
-    <div class="container">	
+    	<div class="container">	
 		<div class="row">
-<?php
-	foreach($room as $row)
-	{
-?>
-	<!--room 목록-->
+			<?php
+				foreach($room as $row)
+				{
+			?>
+			<!--room 목록-->
 			<div class="col-lg-6" data-aos="fade-up">
 				<div style="padding:0px">
 					<a class="image_data" id="<?php echo($row->no);?>">
-						<img class="single-gallery-image" src="/~team1/my/img/indukroom/<?php echo($row->image_room1);?>" style="height:100%; width:100%;">
+						<img class="single-gallery-image" src="/my/img/indukroom/<?php echo($row->image_room1);?>" style="height:100%; width:100%;">
 					</a>
 				</div>
 				<div class="col-lg-12" style="border:1px solid rgb(179, 131, 0); padding:0px; margin-bottom:60px"><br>
@@ -75,18 +73,17 @@
 					</div>
 				</div>
 			</div>
-		
-		<!--room 목록-->
-		<br><br><br>
-<?php
-	}	
-?>
+			<!--room 목록-->
+			<br><br><br>
+			<?php
+				}	
+			?>
 		</div>
 	</div>
-		<!--예약정보 확인하는 navbar 및 확인 -->
+	<!--예약정보 확인하는 navbar 및 확인 -->
 		<div class="reserveinsert"><!--아래에 navbar 붙이기-->
 			<div class="container" style="background: rgb(155, 128, 75);" >
-				<form action="/~team1/reservation/option" method="post" onsubmit="return reservationroom()" > <!--예외처리 확인-->
+				<form action="/reservation/option" method="post" onsubmit="return reservationroom()" > <!--예외처리 확인-->
 					<div class="row">
 						<div class="col-lg-3 ">
 							<input type="hidden" name="carpicupbutton" value="1">
@@ -125,7 +122,7 @@
 						</div>
 						<div class="col-lg-3">
 							<div class="row justify-content-md-center" style="padding-top:30px;">
-								<a href="/~team1/main" style="font-size:15px;" class="genric-btn large primary circle arrow">처음으로</a>&nbsp&nbsp&nbsp
+								<a href="/main" style="font-size:15px;" class="genric-btn large primary circle arrow">처음으로</a>&nbsp&nbsp&nbsp
 								<input type="submit" style="font-size:15px;" class="genric-btn large info circle arrow" value="옵션선택">
 							</div><br><br><br>
 						</div>
@@ -154,5 +151,5 @@
            </div>  
      </div>  
  </div> 
- <script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
- <script src="/~team1/my/js/reservation.js"></script><!--예약 스크립트-->
+ <script src="/my/js/jquery-3.5.1.min.js"></script>
+ <script src="/my/js/reservation.js"></script><!--예약 스크립트-->
