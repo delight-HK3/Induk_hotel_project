@@ -1,9 +1,9 @@
 <section class="banner_area">
 	<div class="reservation_table d_flex align-items-center">
-        <div class="overlay bg-room" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+        	<div class="overlay bg-room" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 		<div class="container">
 			<div class="banner_content text-center"><br><br><br><br><br><br><br><br>
-				<img src="/~team1/my/img/Hotel_name.png" class="animated fadeInDown" style="width:580px; height:266px"><br><br><br>
+				<img src="/my/img/Hotel_name.png" class="animated fadeInDown" style="width:580px; height:266px"><br><br><br>
 				<div class="animated fadeInUp">
 					<center><font class="animated fadeInUp" style="font-family: 'Noto Sans KR', sans-serif; font-size:40px; color:white;">Room</font>
 					<br><br><br>
@@ -11,7 +11,7 @@
 				</div>
 			</div>
 		</div>
-    </div> 
+    	</div> 
 	<!--============== 배너 =================-->
 	<section class="accomodation_area section_gap">
 		 <div class="container">
@@ -21,7 +21,6 @@
 					{
 				?>
 						<div class="col-lg-6">
-
 							<div id="<?php echo($row->no)?>" class="carousel slide" data-interval = "false">
 								<ol class="carousel-indicators">
 									<li data-target="#<?php echo($row->no)?>" data-slide-to="0" class="active"></li>
@@ -30,13 +29,13 @@
 								</ol>
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-									  <img src="/~team1/my/img/indukroom/<?php echo($row->image_room1);?>" class="d-block w-100" height="350" alt="First slide">
+									  <img src="/my/img/indukroom/<?php echo($row->image_room1);?>" class="d-block w-100" height="350" alt="First slide">
 									</div>
 									<div class="carousel-item">
-									  <img src="/~team1/my/img/indukroom/<?php echo($row->image_room2);?>" class="d-block w-100" height="350" alt="Second slide">
+									  <img src="/my/img/indukroom/<?php echo($row->image_room2);?>" class="d-block w-100" height="350" alt="Second slide">
 									</div>
 									<div class="carousel-item">
-									  <img src="/~team1/my/img/indukroom/<?php echo($row->image_room3);?>" class="d-block w-100" height="350" alt="Third slide">
+									  <img src="/my/img/indukroom/<?php echo($row->image_room3);?>" class="d-block w-100" height="350" alt="Third slide">
 									</div>
 								</div>
 								<a class="carousel-control-prev" href="#<?php echo($row->no)?>" role="button" data-slide="prev">
@@ -53,7 +52,7 @@
 								<font style="font-family: 'Noto Sans KR', sans-serif; font-size:13px;"><?php echo($row->Explanation);?></font><br><br>
 								<hr>
 								<font style="font-family: 'Noto Sans KR', sans-serif; font-size:15px;">최저 : <?php echo(number_format($row->price));?> KRW</font>
-								<input type="button" onclick="location.href='/~team1/room/detail/no/<?php echo($row->no);?>'" class="btn theme_btn button_hover float-right" value="상세정보">
+								<input type="button" onclick="location.href='/room/detail/no/<?php echo($row->no);?>'" class="btn theme_btn button_hover float-right" value="상세정보">
 							</div>
 						</div>
 				<?php
@@ -63,4 +62,4 @@
 		</div>
 	</section>
 </section>
-<script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
+<script src="/my/js/jquery-3.5.1.min.js"></script>
