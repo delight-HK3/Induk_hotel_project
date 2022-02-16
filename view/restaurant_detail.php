@@ -1,9 +1,9 @@
 <section class="banner_area">
 	<div class="reservation_table d_flex align-items-center">
-        <div class="overlay" style="background: url('/~team1/my/img/restaurant/<?php echo($restaurant->image_res1);?>') no-repeat scroll center 0/cover; opacity: 0.5; " data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+        	<div class="overlay" style="background: url('/my/img/restaurant/<?php echo($restaurant->image_res1);?>') no-repeat scroll center 0/cover; opacity: 0.5; " data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 		<div class="container">
 			<div class="banner_content text-center"><br><br><br><br><br><br><br><br>
-				<img src="/~team1/my/img/Hotel_name.png" class="animated fadeInDown" style="width:580px; height:266px"><br><br><br>
+				<img src="/my/img/Hotel_name.png" class="animated fadeInDown" style="width:580px; height:266px"><br><br><br>
 				<div class="animated fadeInUp">
 					<center><font style="font-family: 'Noto Sans KR', sans-serif; font-size:40px; color:white;">Restarurant</font>
 					<br><br><br>
@@ -11,52 +11,52 @@
 				</div>
 			</div>
 		</div>
-    </div> 
+   	</div> 
 	<section class="accomodation_area section_gap">
-        <div class="container">
+		<div class="container">
 			<div style="text-align:center">
-                <font style="font-family: 'Noto Sans KR', sans-serif; font-size:35px; color:black; font-weight: 500; "><?php echo($restaurant->name);?></font>
+				<font style="font-family: 'Noto Sans KR', sans-serif; font-size:35px; color:black; font-weight: 500; "><?php echo($restaurant->name);?></font>
 				<br><br><hr>
-            </div>
-				<!--===== 레스토랑 사진 슬라이드 =====-->
-                    <div data-aos="zoom-in" data-aos-duration="3000" class = "text-center">       
-                        <div id="<?php echo($restaurant->no);?>" class="carousel slide carousel-fade" data-interval = "false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#<?php echo($restaurant->no);?>" data-slide-to="0" class="active"></li>
-                                <li data-target="#<?php echo($restaurant->no);?>" data-slide-to="1"></li>
-                                <li data-target="#<?php echo($restaurant->no);?>" data-slide-to="2"></li>                
-                            </ol>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="/~team1/my/img/restaurant/<?php echo($restaurant->image_res1);?>" class="d-block w-100"  height="700" alt="1">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/~team1/my/img/restaurant/<?php echo($restaurant->image_res2);?>" class="d-block w-100"  height="700" alt="2">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/~team1/my/img/restaurant/<?php echo($restaurant->image_res3);?>" class="d-block w-100"  height="700" alt="3">
-                                </div>                       
-                            </div>
-                            <a class="carousel-control-prev" href="#<?php echo($restaurant->no);?>" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#<?php echo($restaurant->no);?>" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>                  
-                    </div><hr><br>
-                <!--===== 레스토랑 사진 슬라이드 =====-->
+			</div>
+			<!--===== 레스토랑 사진 슬라이드 =====-->
+                    	<div data-aos="zoom-in" data-aos-duration="3000" class = "text-center">       
+                        	<div id="<?php echo($restaurant->no);?>" class="carousel slide carousel-fade" data-interval = "false">
+				    <ol class="carousel-indicators">
+					<li data-target="#<?php echo($restaurant->no);?>" data-slide-to="0" class="active"></li>
+					<li data-target="#<?php echo($restaurant->no);?>" data-slide-to="1"></li>
+					<li data-target="#<?php echo($restaurant->no);?>" data-slide-to="2"></li>                
+				    </ol>
+				    <div class="carousel-inner">
+					<div class="carousel-item active">
+					    <img src="/my/img/restaurant/<?php echo($restaurant->image_res1);?>" class="d-block w-100"  height="700" alt="1">
+					</div>
+					<div class="carousel-item">
+					    <img src="/my/img/restaurant/<?php echo($restaurant->image_res2);?>" class="d-block w-100"  height="700" alt="2">
+					</div>
+					<div class="carousel-item">
+					    <img src="/my/img/restaurant/<?php echo($restaurant->image_res3);?>" class="d-block w-100"  height="700" alt="3">
+					</div>                       
+				    </div>
+				    <a class="carousel-control-prev" href="#<?php echo($restaurant->no);?>" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				    </a>
+				    <a class="carousel-control-next" href="#<?php echo($restaurant->no);?>" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				    </a>
+				</div>                  
+			</div><hr><br>
+               	 	<!--===== 레스토랑 사진 슬라이드 =====-->
 
 				<!--===== 레스토랑 설명 =====-->
-					<div style="text-align:center" >
-						<span style="color:black">
-							<h3>레스토랑 소개</h3>
-						</span>
-						<font style="font-family: 'Noto Sans KR', sans-serif; font-size:16px"><?php echo($restaurant->Explanation);?></font>
-					</div><br>
-					<hr><br>
+				<div style="text-align:center" >
+					<span style="color:black">
+						<h3>레스토랑 소개</h3>
+					</span>
+					<font style="font-family: 'Noto Sans KR', sans-serif; font-size:16px"><?php echo($restaurant->Explanation);?></font>
+				</div><br>
+				<hr><br>
 				<!--===== 레스토랑 설명 =====-->
 
 				<!--===== 레스토랑 사용 설명 =====-->
@@ -87,25 +87,25 @@
 			<!--===== 객실개요 =====-->
 			<br><hr><br>
 			<!--===== 특별서비스 =====-->
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3">
-							<div class="single-footer-widget">
-								<span style="color:black"><h3>추가정보</h3> </span>
-							</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="single-footer-widget">
+							<span style="color:black"><h3>추가정보</h3> </span>
 						</div>
-						<ul>
-							<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px; color:blue">정부의 사회적 거리두기 지침에 따라 영업 시간이 변동될 수 있습니다.</li>
-							<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">예약 시 성인 1명은 필수로 있어야 합니다.</li>
-							<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">최대 8인 까지 예약 및 입장이 가능합니다.</li>
-							<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">6인 이상의 고객은 완전 예약제로 운영됩니다.</li>
-							<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">케이크는 방문 1일전까지 사전 주문제로 운영됩니다.<br> 
-							(케이크 가격 : medium size 50,000 KRW , small size 30,000 KRW)</li>
-							<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">주류 반입 금액은 한도 100,000원으로 일괄 적용됩니다.</li>
-							<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">재료 수급 상황에 따라 메뉴 변동이 있을 수 있습니다.</li>
-						</ul>
 					</div>
-				</div>	
+					<ul>
+						<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px; color:blue">정부의 사회적 거리두기 지침에 따라 영업 시간이 변동될 수 있습니다.</li>
+						<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">예약 시 성인 1명은 필수로 있어야 합니다.</li>
+						<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">최대 8인 까지 예약 및 입장이 가능합니다.</li>
+						<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">6인 이상의 고객은 완전 예약제로 운영됩니다.</li>
+						<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">케이크는 방문 1일전까지 사전 주문제로 운영됩니다.<br> 
+						(케이크 가격 : medium size 50,000 KRW , small size 30,000 KRW)</li>
+						<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">주류 반입 금액은 한도 100,000원으로 일괄 적용됩니다.</li>
+						<li style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; margin-top:5px">재료 수급 상황에 따라 메뉴 변동이 있을 수 있습니다.</li>
+					</ul>
+				</div>
+			</div>	
 			<!--===== 특별서비스 =====-->
 			<br><hr><br>
 			<!--===== 환불정보 =====-->
@@ -152,82 +152,82 @@
 						foreach($reple as $row)
 						{
 					?>		
-							<form action="/~team1/restaurant/reple_delete/no/<?php echo($row->no)?>/restaurant_no/<?php echo($restaurant->no);?>" method="post" >
-							<input type="hidden" value="<?php echo($row->reple_rank)?>">
-							<font style="padding-top:9px; padding-bottom:9px; font-family: 'Noto Sans KR', sans-serif; font-size:25px;"><?php echo($row->reple_id);?></font>
-							<?php
-								if($this->session->userdata("rank")){
-							?>
+							<form action="/restaurant/reple_delete/no/<?php echo($row->no)?>/restaurant_no/<?php echo($restaurant->no);?>" method="post" >
+								<input type="hidden" value="<?php echo($row->reple_rank)?>">
+								<font style="padding-top:9px; padding-bottom:9px; font-family: 'Noto Sans KR', sans-serif; font-size:25px;"><?php echo($row->reple_id);?></font>
+								<?php
+									if($this->session->userdata("rank")){
+								?>
+										<?php
+											if($this->session->userdata("uid") == $row->reple_id){
+										?>
+												<input type="submit" onclick="return confirm('삭제 하시겠습니까 ?')" class="delete_button btn btn-outline-danger" value="X" style="border-radius:40px; margin:0px; margin-bottom:9px; margin-left:20px">
+										<?php
+											}
+										?>
+								<?php
+									}
+								?>
+								<br>
+								<font style="padding-top:9px; padding-bottom:9px; font-family: 'Noto Sans KR', sans-serif; font-size:15px;">작성일 : <?php echo($row->reple_date);?></font><br>
+								<div style="padding-top:10px;" >
 									<?php
-										if($this->session->userdata("uid") == $row->reple_id){
+										if($row->reple_rank == 5){
 									?>
-											<input type="submit" onclick="return confirm('삭제 하시겠습니까 ?')" class="delete_button btn btn-outline-danger" value="X" style="border-radius:40px; margin:0px; margin-bottom:9px; margin-left:20px">
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-on.png">
 									<?php
 										}
 									?>
-							<?php
-								}
-							?>
-							<br>
-							<font style="padding-top:9px; padding-bottom:9px; font-family: 'Noto Sans KR', sans-serif; font-size:15px;">작성일 : <?php echo($row->reple_date);?></font><br>
-							<div style="padding-top:10px;" >
-								<?php
-									if($row->reple_rank == 5){
-								?>
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-								<?php
-									}
-								?>
-								<?php
-									if($row->reple_rank == 4){
-								?>
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-off.png">
-								<?php
-									}
-								?>
-								<?php
-									if($row->reple_rank == 3){
-								?>
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
-								<?php
-									}
-								?>
-								<?php
-									if($row->reple_rank == 2){
-								?>
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
-								<?php
-									}
-								?>
-								<?php
-									if($row->reple_rank == 1){
-								?>
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
-								<?php
-									}
-								?><br><br>
-								<font style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; padding-left:20px"><?php echo($row->reple_text);?></font>
-							</div>
+									<?php
+										if($row->reple_rank == 4){
+									?>
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-off.png">
+									<?php
+										}
+									?>
+									<?php
+										if($row->reple_rank == 3){
+									?>
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-off.png">
+											<img src="/my/img/star-off.png">
+									<?php
+										}
+									?>
+									<?php
+										if($row->reple_rank == 2){
+									?>
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-off.png">
+											<img src="/my/img/star-off.png">
+											<img src="/my/img/star-off.png">
+									<?php
+										}
+									?>
+									<?php
+										if($row->reple_rank == 1){
+									?>
+											<img src="/my/img/star-on.png">
+											<img src="/my/img/star-off.png">
+											<img src="/my/img/star-off.png">
+											<img src="/my/img/star-off.png">
+											<img src="/my/img/star-off.png">
+									<?php
+										}
+									?><br><br>
+									<font style="font-family: 'Noto Sans KR', sans-serif; font-size:15px; padding-left:20px"><?php echo($row->reple_text);?></font>
+								</div>
 							</form>
 							<hr>
 							<br>
@@ -236,13 +236,14 @@
 					?>
 				</div>
 			</div>
-		</div><br><br><br><br><br>
+		</div>
+		<br><br><br><br><br>
 	</section>
 </section>
 
 
 <div class="modal fade" id="restarurantModal" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModelLabel" >
-	<form action="/~team1/restaurant/add" method="post" onsubmit="return res_check()">
+	<form action="/restaurant/add" method="post" onsubmit="return res_check()">
 	<div class="modal-dialog" role="document" style="width:600px">
 		<div class="modal-content" style="width:602px">
 			<div class="modal-header" style="width:600px; background: rgb(255, 190, 11);">
@@ -325,7 +326,7 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div><br>
-			<form method="post" action="/~team1/restaurant/reple/no/<?php echo($restaurant->no)?>" onsubmit="return replecheck()">
+			<form method="post" action="/restaurant/reple/no/<?php echo($restaurant->no)?>" onsubmit="return replecheck()">
 			<h4 class="modal-title" style="text-align: center; margin-top:10px; margin-bottom:10px" id="exampleModelLabel">이용후기</h4><br>
 				<div class="modal-body bg-light" style="width:400px;">
 					<div style="padding:15px">
@@ -378,7 +379,7 @@
 	</div>
 </div>
 
-<script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
+<script src="/my/js/jquery-3.5.1.min.js"></script>
 
 <script>
 	$(document).ready(function(){
