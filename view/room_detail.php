@@ -1,9 +1,9 @@
 <section class="banner_area">
 	<div class="reservation_table d_flex align-items-center">
-        <div class="overlay" style="background: url('/~team1/my/img/indukroom/<?php echo($room->image_room1);?>') no-repeat scroll center 0/cover; opacity: 0.5; " data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+        	<div class="overlay" style="background: url('/my/img/indukroom/<?php echo($room->image_room1);?>') no-repeat scroll center 0/cover; opacity: 0.5; " data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 		<div class="container">
 			<div class="banner_content text-center"><br><br><br><br><br><br><br><br>
-				<img src="/~team1/my/img/Hotel_name.png" class="animated fadeInDown" style="width:580px; height:266px"><br><br><br>
+				<img src="/my/img/Hotel_name.png" class="animated fadeInDown" style="width:580px; height:266px"><br><br><br>
 				<div class="animated fadeInUp">
 					<center><font class="animated fadeInUp" style="font-family: 'Noto Sans KR', sans-serif; font-size:40px; color:white;">Room</font>
 					<br><br><br>
@@ -11,7 +11,7 @@
 				</div>
 			</div>
 		</div>
-    </div> 
+    	</div> 
 	<section class="accomodation_area section_gap">
 		<div class="container">
 			<div style="text-align:center">
@@ -21,35 +21,32 @@
 			<!--===== 사진 슬라이드 =====-->
 			<div data-aos="zoom-in" data-aos-duration="3000" class = "text-center"> 							   
 				<div id="<? echo($room->no);?>" class="carousel slide carousel-fade" data-ride="carousel">
-				   <ol class="carousel-indicators">
+				   	<ol class="carousel-indicators">
 						<li data-target="#<? echo($room->no);?>" data-slide-to="0" class="active"></li>
 						<li data-target="#<? echo($room->no);?>" data-slide-to="1"></li>
 						<li data-target="#<? echo($room->no);?>" data-slide-to="2"></li>                
 					</ol>
-
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="/~team1/my/img/indukroom/<? echo($room->image_room1);?>" class="d-block w-100" alt="1">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="/my/img/indukroom/<? echo($room->image_room1);?>" class="d-block w-100" alt="1">
+						</div>
+						<div class="carousel-item">
+							<img src="/my/img/indukroom/<? echo($room->image_room2);?>" class="d-block w-100" alt="2">
+						</div>
+						<div class="carousel-item">
+							<img src="/my/img/indukroom/<? echo($room->image_room3);?>" class="d-block w-100" alt="3">
+						</div>  
 					</div>
-					<div class="carousel-item">
-						<img src="/~team1/my/img/indukroom/<? echo($room->image_room2);?>" class="d-block w-100" alt="2">
-					</div>
-					<div class="carousel-item">
-						<img src="/~team1/my/img/indukroom/<? echo($room->image_room3);?>" class="d-block w-100" alt="3">
-					</div>  
-				</div>
 				
-				<a class="carousel-control-prev" href="#<? echo($room->no);?>" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#<? echo($room->no);?>" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-
+					<a class="carousel-control-prev" href="#<? echo($room->no);?>" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#<? echo($room->no);?>" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
-				
 			</div>
 			<!--===== 사진 슬라이드 =====-->
 			<hr><br>
@@ -70,7 +67,6 @@
 							<span style="color:black"><h3>객실개요</h3> </span>
 						</div>
 					</div>
-
 					<div class="col-lg-3 col-md-6 col-sm-6">
 					   <div class="single-footer-widget">
 							<span style="color:black"><h5>침대타입</h5> </span>
@@ -78,7 +74,6 @@
 							<br>
 						</div>
 					</div>
-
 					<div class="col-lg-3 col-md-6 col-sm-6">
 						<div class="single-footer-widget">
 							<span style="color:black"><h5>최대 투숙인원</h5> </span>
@@ -86,7 +81,6 @@
 							<br>
 						</div>
 					</div>
-
 					<div class="col-lg-3  col-md-6 col-sm-6">
 						<div class="single-footer-widget">
 							<span style="color:black"><h5>전망</h5> </span>
@@ -105,7 +99,6 @@
 							<span style="color:black"><h3>특별서비스</h3> </span>
 						</div>
 					</div>
-
 					<ul style="font-family: 'Noto Sans KR', sans-serif; font-size:15px;">
 						<li style="margin-top:5px">초고층 타워의 전 객실에서 서울의 경관을 조망할 수 있는 파노라믹뷰</li>
 						<li style="margin-top:5px">슈퍼프리미엄 베딩 시스템 : 최상의 숙면을 위한 침대 및 침구류</li>
@@ -128,14 +121,13 @@
 							<span style="color:black"><h3>어메니티</h3> </span>               
 						</div>
 					</div>
-						
 					<div class="col-lg-3  col-md-6 col-sm-6">
 						<div class="single-footer-widget">
 							<span style="color:black"><h5>일반</h5> </span>
 							<p style="font-family: 'Noto Sans KR', sans-serif; font-size:15px;"><? echo($room->normal);?></p>
 							<br>
 						</div>
-							<br>
+						<br>
 					</div>
 
 					<div class="col-lg-3  col-md-6 col-sm-6">
@@ -145,7 +137,6 @@
 							<br>
 						</div>
 					</div>
-
 					<div class="col-lg-3  col-md-6 col-sm-6">
 						<div class="single-footer-widget">
 							<span style="color:black"><h5>기타</h5> </span>
@@ -224,7 +215,7 @@
 						foreach($reple as $row)
 						{
 					?>		
-							<form action="/~team1/room/reple_delete/no/<?php echo($row->no)?>/room_no/<?php echo($room->no);?>" method="post" >
+							<form action="/room/reple_delete/no/<?php echo($row->no)?>/room_no/<?php echo($room->no);?>" method="post" >
 							<input type="hidden" value="<?php echo($row->reple_rank)?>">
 							<font style="padding-top:9px; padding-bottom:9px; font-family: 'Noto Sans KR', sans-serif; font-size:25px;"><?php echo($row->reple_id);?></font>
 							<?php
@@ -246,55 +237,55 @@
 								<?php
 									if($row->reple_rank == 5){
 								?>
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
 								<?php
 									}
 								?>
 								<?php
 									if($row->reple_rank == 4){
 								?>
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-off.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-off.png">
 								<?php
 									}
 								?>
 								<?php
 									if($row->reple_rank == 3){
 								?>
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-off.png">
+										<img src="/my/img/star-off.png">
 								<?php
 									}
 								?>
 								<?php
 									if($row->reple_rank == 2){
 								?>
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-off.png">
+										<img src="/my/img/star-off.png">
+										<img src="/my/img/star-off.png">
 								<?php
 									}
 								?>
 								<?php
 									if($row->reple_rank == 1){
 								?>
-										<img src="/~team1/my/img/star-on.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
-										<img src="/~team1/my/img/star-off.png">
+										<img src="/my/img/star-on.png">
+										<img src="/my/img/star-off.png">
+										<img src="/my/img/star-off.png">
+										<img src="/my/img/star-off.png">
+										<img src="/my/img/star-off.png">
 								<?php
 									}
 								?><br><br>
@@ -320,7 +311,7 @@
 					<span aria-hidden="true" onClick="javascript:detailreset()">&times;</span>
 				</button>
 			</div><br>
-			<form method="post" action="/~team1/reservation/deoption" onsubmit="return detailcheck()">
+			<form method="post" action="/reservation/deoption" onsubmit="return detailcheck()">
 				<h4 class="modal-title" style="text-align: center; margin-top:10px; margin-bottom:10px" id="exampleModelLabel">Room 예약</h4><br>
 				<div class="modal-body bg-light" style="width:600px;">
 					<div style="padding:15px">
@@ -384,7 +375,7 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div><br>
-			<form method="post" action="/~team1/room/reple/no/<?php echo($room->no)?>?>" onsubmit="return replecheck()">
+			<form method="post" action="/room/reple/no/<?php echo($room->no)?>?>" onsubmit="return replecheck()">
 			<h4 class="modal-title" style="text-align: center; margin-top:10px; margin-bottom:10px" id="exampleModelLabel">이용후기</h4><br>
 				<div class="modal-body bg-light" style="width:400px;">
 					<div style="padding:15px">
@@ -437,7 +428,7 @@
 	</div>
 </div>
 
-<script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
+<script src="/my/js/jquery-3.5.1.min.js"></script>
 
 <script>
 	$(document).ready(function(){
