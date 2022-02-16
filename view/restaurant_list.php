@@ -1,9 +1,9 @@
 <section class="banner_area">
 	<div class="reservation_table d_flex align-items-center">
-        <div class="overlay bg-restarurant" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+        	<div class="overlay bg-restarurant" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 		<div class="container">
 			<div class="banner_content text-center"><br><br><br><br><br><br><br><br>
-				<img src="/~team1/my/img/Hotel_name.png" class="animated fadeInDown" style="width:580px; height:266px"><br><br><br>
+				<img src="/my/img/Hotel_name.png" class="animated fadeInDown" style="width:580px; height:266px"><br><br><br>
 				<div class="animated fadeInUp">
 					<center><font style="font-family: 'Noto Sans KR', sans-serif; font-size:40px; color:white;">Restarurant</font>
 					<br><br><br>
@@ -11,7 +11,7 @@
 				</div>
 			</div>
 		</div>
-    </div> 
+    	</div> 
 	<section class="accomodation_area section_gap">
 		 <div class="container">
 			<div class="row">
@@ -28,13 +28,13 @@
 								</ol>
 								<div class="carousel-inner">
 									<div class="carousel-item active">
-									  <img src="/~team1/my/img/restaurant/<?php echo($row->image_res1);?>" class="d-block w-100" height="350" alt="First slide">
+									  <img src="/my/img/restaurant/<?php echo($row->image_res1);?>" class="d-block w-100" height="350" alt="First slide">
 									</div>
 									<div class="carousel-item">
-									  <img src="/~team1/my/img/restaurant/<?php echo($row->image_res2);?>" class="d-block w-100" height="350" alt="Second slide">
+									  <img src="/my/img/restaurant/<?php echo($row->image_res2);?>" class="d-block w-100" height="350" alt="Second slide">
 									</div>
 									<div class="carousel-item">
-									  <img src="/~team1/my/img/restaurant/<?php echo($row->image_res3);?>" class="d-block w-100" height="350" alt="Third slide">
+									  <img src="/my/img/restaurant/<?php echo($row->image_res3);?>" class="d-block w-100" height="350" alt="Third slide">
 									</div>
 								</div>
 								<a class="carousel-control-prev" href="#<?php echo($row->no)?>" role="button" data-slide="prev">
@@ -50,7 +50,7 @@
 								<font style="font-family: 'Noto Sans KR', sans-serif; font-size:20px;"><?php echo($row->name);?></font><br><br>
 								<div style="overflow : hidden;" >
 									<font style="font-family: 'Noto Sans KR', sans-serif; font-size:15px;">영업시간 : <?php echo date("H:i",strtotime($row->opentime));?>&nbsp-&nbsp<?php echo date("H:i",strtotime($row->closetime));?></font>
-									<a href="/~team1/restaurant/detail/no/<?php echo($row->no);?>" style="width:150px" class="btn theme_btn button_hover  float-right">상세정보</a>
+									<a href="/restaurant/detail/no/<?php echo($row->no);?>" style="width:150px" class="btn theme_btn button_hover  float-right">상세정보</a>
 								</div>
 							</div>
 						</div>
@@ -61,4 +61,4 @@
 		</div>
 	</section>
 </section>
-<script src="/~team1/my/js/jquery-3.5.1.min.js"></script>
+<script src="/my/js/jquery-3.5.1.min.js"></script>
