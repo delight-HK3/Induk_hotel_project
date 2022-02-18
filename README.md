@@ -8,11 +8,11 @@
 >Client page : <a href="https://themewagon.com/themes/free-bootstrap-hotel-template-royal/">Royal – Free Bootstrap Hotel Template with Booking Form</a><br>
 >Admin page : <a href="https://startbootstrap.com/theme/sb-admin-2">SB Admin 2</a>
 
-프로젝트 분류 : 팀 프로젝트
+### 프로젝트 분류 : 팀 프로젝트
 
 제작한 목적 : 프레임워크와 언어의 숙련도를 높이고 나아가 팀별 프로젝트의 숙련도를 높이기 위하여 제작하였습니다.<br>
 
-주의사항<br>
+### 주의사항<br>
 <ul>
   <li>이 프로젝트를 실행하기 위해서는 my 이름의 폴더가 있어야 합니다.</li>
   <kbd>
