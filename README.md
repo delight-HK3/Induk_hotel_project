@@ -1,4 +1,4 @@
-# Induk_hotel_project
+# Induk hotel project
 
 >사용한 프레임워크 : codeigniter 3, bootstrap 4.5<br>
 >사용한 언어 : php5, css3, jquery, javascript, ajax, SQL<br>
