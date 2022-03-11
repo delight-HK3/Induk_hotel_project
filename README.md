@@ -13,7 +13,7 @@
 
 ### 프로젝트 분류 : 팀 프로젝트
 
-제작한 목적 : 프레임워크와 언어의 숙련도를 높이고 나아가 팀별 프로젝트의 숙련도를 높이기 위하여 제작하였습니다.<br>
+<b>제작한 목적</b> : 프레임워크와 언어의 숙련도를 높이고 나아가 팀별 프로젝트의 숙련도를 높이기 위하여 제작하였습니다.<br>
 <br>
 
 ### 주의사항<br>
@@ -26,6 +26,8 @@
   <li>개인 서버에 맞게 /config/config.php에 있는 session 경로를 새로 정해주시기 바랍니다.</li>
   <li>/config/database.php 에서 데이터베이스를 새로 설정해주시기 바랍니다.</li>
   <li>데이터베이스의 데이터 정렬방식은 utf8_general_ci로 통일했습니다.</li>
+  <li>codeIgniter3 에서 Index 죽이기 작업을 하고 진행했습니다. 위의 코드를 실행시키려면 먼저 Index 죽이기 작업을 하셔야 합니다.</li>
+   <li><a href="https://gold9ine.tistory.com/entry/CodeIgniter-%EC%BD%94%EB%93%9C%EC%9D%B4%EA%B7%B8%EB%82%98%EC%9D%B4%ED%84%B0-indexphp-%EC%A3%BD%EC%9D%B4%EA%B8%B0-Not-Found-error">index.php remove 방법 블로그 글</a></li>
 </ul>
 <br>
 
