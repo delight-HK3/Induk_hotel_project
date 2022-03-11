@@ -1,7 +1,7 @@
 # Induk hotel project
 
->사용한 프레임워크 : codeigniter 3, bootstrap 4.5<br>
->사용한 언어 : php5, css3, jquery, javascript, ajax, SQL<br>
+>사용한 프레임워크 : codeigniter 3, bootstrap 4<br>
+>사용한 언어 : php5, css3, jquery, javascript, SQL<br>
 >사용한 DB : MariaDB<br>
 >사용한 Tool : Visual Studio Code<br>
 <br>
