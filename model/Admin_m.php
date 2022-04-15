@@ -1,4 +1,6 @@
-<?
+<?php
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+
 class Admin_m extends CI_Model     // 모델 클래스 선언
 {
     //index page 파트
