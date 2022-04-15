@@ -1,4 +1,6 @@
-<?
+<?php
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+
 class Mypage_m extends CI_Model{
         public function getrow($uid)
 	{ 
