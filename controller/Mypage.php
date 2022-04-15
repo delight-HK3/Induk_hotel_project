@@ -1,4 +1,6 @@
-<?
+<?php
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+
 class Mypage extends CI_Controller {               // 클래스이름 첫 글자는 대문자
 	function __construct(){
 		parent::__construct();
