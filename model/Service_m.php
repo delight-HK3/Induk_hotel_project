@@ -1,4 +1,6 @@
-<?
+<?php
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+
 class Service_m extends CI_Model{
 	public function getservice()
 	{
