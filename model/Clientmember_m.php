@@ -1,4 +1,6 @@
-<?
+<?php
+if (!defined('BASEPATH')) exit('No direct script access allowed');
+
 class Clientmember_m extends CI_Model{
 	public function insert($row)
 	{
